@@ -1,3 +1,6 @@
+# vim swp
+*.sw?
+
 # Logs
 logs
 *.log
