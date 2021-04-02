@@ -1,1 +1,3 @@
-# get-your-movies-here
+# Get Your Movies Here
+
+Sample movie rental app
