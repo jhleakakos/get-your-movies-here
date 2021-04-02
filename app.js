@@ -1,4 +1,4 @@
-// abc def
+// correct merged comment line
 const express = require('express');
 const app = express();
 const path = require('path');
