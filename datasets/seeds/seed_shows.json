@@ -1,0 +1,2122 @@
+[
+    {
+        "score": 23.78844,
+        "show": {
+            "id": 30634,
+            "url": "https://www.tvmaze.com/shows/30634/stargate-origins",
+            "name": "Stargate Origins",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 10,
+            "premiered": "2018-02-15",
+            "officialSite": "http://stargatecommand.co/",
+            "schedule": {
+                "time": "16:30",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 5.7
+            },
+            "weight": 78,
+            "network": null,
+            "webChannel": {
+                "id": 211,
+                "name": "Stargate Command",
+                "country": {
+                    "name": "Canada",
+                    "code": "CA",
+                    "timezone": "America/Halifax"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 339552,
+                "imdb": "tt7161862"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/146/365955.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/146/365955.jpg"
+            },
+            "summary": "<p>In 1939, Professor Paul Langford and his daughter Catherine are still grappling with the mysteries of the ancient relic they discovered in the Egyptian desert more than ten years ago. With war looming in Europe and funding running out, these brilliant minds are approaching their lowest ebb. Little do they know, answers are about to present themselves in a dangerous form, when the Nazi Occultist Dr. Wilhelm Brücke approaches their facility with a sinister motive.</p><p>Enlisting the help of two young soldiers, Catherine must use all of her wit and nous as she and her new allies embark on an adventure into the unknown to rescue her father, and save the Earth from an unimaginable darkness.</p><p><b>Stargate Origins</b> explores the journey that sets a young Catherine Langford on the way to helping unlock the secrets of an ancient technology that could change the very course of humanity.</p>",
+            "updated": 1573602977,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/30634"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1412536"
+                }
+            }
+        }
+    },
+    {
+        "score": 23.56036,
+        "show": {
+            "id": 207,
+            "url": "https://www.tvmaze.com/shows/207/stargate-universe",
+            "name": "Stargate Universe",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2009-10-02",
+            "officialSite": "http://stargate.mgm.com/view/series/3/index.html",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 96,
+            "network": {
+                "id": 16,
+                "name": "Syfy",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 15343,
+                "thetvdb": 83237,
+                "imdb": "tt1286039"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/81/204195.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/81/204195.jpg"
+            },
+            "summary": "<p><b>Stargate Universe</b> follows a band of soldiers, scientists and civilians, who must fend for themselves as they are forced through a Stargate when their hidden base comes under attack. The desperate survivors emerge aboard an ancient ship, which is locked on an unknown course and unable to return to Earth. Faced with meeting the most basic needs of food, water and air, the group must unlock the secrets of the ship's Stargate to survive. The danger, adventure and hope they find on board the Destiny will reveal the heroes and villains among them.</p>",
+            "updated": 1612885522,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/207"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/13822"
+                }
+            }
+        }
+    },
+    {
+        "score": 23.298574,
+        "show": {
+            "id": 206,
+            "url": "https://www.tvmaze.com/shows/206/stargate-atlantis",
+            "name": "Stargate Atlantis",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2004-07-16",
+            "officialSite": "http://stargate.mgm.com/view/series/2/index.html",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.9
+            },
+            "weight": 96,
+            "network": {
+                "id": 16,
+                "name": "Syfy",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5324,
+                "thetvdb": 70851,
+                "imdb": "tt0374455"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/1/3059.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/1/3059.jpg"
+            },
+            "summary": "<p>Atlantis, built thousands of years ago by the highly evolved Ancients, is home base for an elite expedition from Earth. These courageous military commanders and scientists leap through the city's Stargate to explore the wondrous Pegasus galaxy and battle the treacherous Wraith, who seek control of Atlantis -- at any cost.</p>",
+            "updated": 1612664989,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/206"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/13782"
+                }
+            }
+        }
+    },
+    {
+        "score": 20.556456,
+        "show": {
+            "id": 204,
+            "url": "https://www.tvmaze.com/shows/204/stargate-sg-1",
+            "name": "Stargate SG-1",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "1997-07-27",
+            "officialSite": "http://stargate.mgm.com/view/series/1/index.html",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 9.2
+            },
+            "weight": 97,
+            "network": {
+                "id": 16,
+                "name": "Syfy",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5325,
+                "thetvdb": 72449,
+                "imdb": "tt0118480"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/1/3027.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/1/3027.jpg"
+            },
+            "summary": "<p><b>Stargate SG-1</b> is a science fiction series based on the original film <i>Stargate</i>. It involves the team SG-1 going on various adventures to different alien worlds through Stargates. Throughout the series they encounter various alien threats and allies including but not limited to the Goa'uld and the Asgard.</p>",
+            "updated": 1611769715,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/204"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/13654"
+                }
+            }
+        }
+    },
+    {
+        "score": 15.872328,
+        "show": {
+            "id": 3721,
+            "url": "https://www.tvmaze.com/shows/3721/stargate-infinity",
+            "name": "Stargate: Infinity",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "2002-09-14",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 24,
+            "network": {
+                "id": 4,
+                "name": "FOX",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5323,
+                "thetvdb": 70852,
+                "imdb": "tt0320969"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/19/47541.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/19/47541.jpg"
+            },
+            "summary": "<p>Inspired by the blockbuster feature film and its two popular television spinoffs: Stargate: SG-1 and Stargate: Atlantis, <b>Stargate: Infinity</b> further explores the universe through the eyes of those few who are brave enough to venture through the mysterious Stargate.<br /><br />This animated series chronicles a generation after the SGC first stepped through the alien device known as the Stargate. The war with the evil parasitic Goa uld is won. The once top-secret Stargate Command and its work have been declassified, and beings from other worlds are living among us.<br /><br />But now there s a new threat and Major Gus Bonner must lead a group of young SGC cadets through the Stargate to protect the life of an Ancient from hostile new enemies.</p>",
+            "updated": 1515941737,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/3721"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/239688"
+                }
+            }
+        }
+    },
+    {
+        "score": 12.742836,
+        "show": {
+            "id": 26585,
+            "url": "https://www.tvmaze.com/shows/26585/sgu-stargate-universe-kino",
+            "name": "SGU Stargate Universe Kino",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 1,
+            "premiered": "2009-10-22",
+            "officialSite": "http://stargate.wikia.com/wiki/Kino_webisodes",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 86,
+            "network": null,
+            "webChannel": {
+                "id": 49,
+                "name": "Syfy",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt1648680"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/104/261679.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/104/261679.jpg"
+            },
+            "summary": "<p>Stranded in a distant part of the universe, the crew of the Ancient starship Destiny record their thoughts and observations.</p>",
+            "updated": 1563713451,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/26585"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1117809"
+                }
+            }
+        }
+    },
+    {
+        "score": 3.85718,
+        "show": {
+            "id": 6536,
+            "url": "https://www.tvmaze.com/shows/6536/starcade",
+            "name": "Starcade",
+            "type": "Game Show",
+            "language": "English",
+            "genres": [],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "1982-12-27",
+            "officialSite": "http://www.starcade.tv/starcade/one.asp",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 32,
+                "name": "TBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 73086,
+                "imdb": "tt0198244"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/24/62175.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/24/62175.jpg"
+            },
+            "summary": "<p><b>Starcade</b> is a game show where contestants competed against one another by playing arcade video games. The series originally aired on WTBS from 1982–1983, followed by a run in syndication for the following season. The series was first hosted by Mark Richards. Geoff Edwards replaced Richards after the first 23 shows, and continued until the show's cancellation. Two players (or teams; age-regardless) competed.</p><p>Three rounds were played. Each round began with a video arcade-game related toss-up question. The player who buzzed in and answered correctly chose one of five free-standing arcade games in the studio and was given 40 seconds (later 60, then 50) to amass as high a score as possible. The opponent then played the same game, and whatever points the players earned were added to their overall scores. If a player's game ended before time ran out, the turn ended immediately and the player was credited with whatever points they had earned.</p><p>The second and third rounds were played identically, with 40 seconds (later 50) game playing time for the second round, and 30 seconds (later 40) for the third. Once a game was chosen for play in any round, it could not be chosen again. At the end of the second round (and third when the series began), the player in the lead played \"Name the Game,\" attempting to identify four arcade games by screenshots. The player won a prize for correctly identifying at least three of the games. One of the five games was the \"mystery game,\" which awarded a prize to the player who chose it in any of the three rounds. The player in the lead at the end of the third and final round won the game and a bonus prize, and moved on to the bonus round.</p>",
+            "updated": 1495450056,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/6536"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/384981"
+                }
+            }
+        }
+    },
+    {
+        "score": 1.4144628,
+        "show": {
+            "id": 26593,
+            "url": "https://www.tvmaze.com/shows/26593/vil-i-starte-helt-forfra",
+            "name": "Vil i starte helt forfra?",
+            "type": "Reality",
+            "language": "Danish",
+            "genres": [],
+            "status": "Running",
+            "runtime": 40,
+            "premiered": "2017-03-15",
+            "officialSite": null,
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 322,
+                "name": "TV2",
+                "country": {
+                    "name": "Denmark",
+                    "code": "DK",
+                    "timezone": "Europe/Copenhagen"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 325547,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/104/261710.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/104/261710.jpg"
+            },
+            "summary": null,
+            "updated": 1492588162,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/26593"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1146252"
+                }
+            }
+        }
+    },
+    {
+        "score": 27.266336,
+        "show": {
+            "id": 1259,
+            "url": "https://www.tvmaze.com/shows/1259/star-wars-clone-wars",
+            "name": "Star Wars: Clone Wars",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Family",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 15,
+            "premiered": "2003-11-07",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 91,
+            "network": {
+                "id": 11,
+                "name": "Cartoon Network",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5340,
+                "thetvdb": 72244,
+                "imdb": "tt0361243"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/7/18007.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/7/18007.jpg"
+            },
+            "summary": "<p>The Clone Wars television series chronicles the events taking place between Star Wars Episode II: Attack of the Clones and Star Wars Episode III: Revenge of the Sith. The Clone Wars will ultimately lead to the downfall of the Jedi and the rise of the Galactic Empire.</p>",
+            "updated": 1608528925,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/1259"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/109494"
+                }
+            }
+        }
+    },
+    {
+        "score": 25.812302,
+        "show": {
+            "id": 117,
+            "url": "https://www.tvmaze.com/shows/117/star-wars-rebels",
+            "name": "Star Wars Rebels",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "2014-09-29",
+            "officialSite": "http://disneyxd.disney.com/star-wars-rebels",
+            "schedule": {
+                "time": "09:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 7.9
+            },
+            "weight": 92,
+            "network": {
+                "id": 25,
+                "name": "Disney XD",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": 35995,
+                "thetvdb": 283468,
+                "imdb": "tt2930604"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/26/66846.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/26/66846.jpg"
+            },
+            "summary": "<p><b>Star Wars Rebels</b>, set five years before the events of Star Wars: Episode IV - A New Hope, tells the story of the Rebellion's beginnings while the Empire spreads tyranny through the galaxy.</p>",
+            "updated": 1615319364,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/117"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1392976"
+                }
+            }
+        }
+    },
+    {
+        "score": 25.655037,
+        "show": {
+            "id": 52340,
+            "url": "https://www.tvmaze.com/shows/52340/star-wars-visions",
+            "name": "Star Wars: Visions",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Anime"
+            ],
+            "status": "In Development",
+            "runtime": null,
+            "premiered": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 93,
+            "network": null,
+            "webChannel": {
+                "id": 287,
+                "name": "Disney+",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 393190,
+                "imdb": "tt13622982"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/288/720885.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/288/720885.jpg"
+            },
+            "summary": "<p><b>Star Wars: Visions</b>, an Original Series of animated short films, celebrates the Star Wars galaxy through the lens of the world's best Japanese anime creators. </p>",
+            "updated": 1614634396,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/52340"
+                }
+            }
+        }
+    },
+    {
+        "score": 25.563936,
+        "show": {
+            "id": 563,
+            "url": "https://www.tvmaze.com/shows/563/star-wars-the-clone-wars",
+            "name": "Star Wars: The Clone Wars",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "2008-10-03",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.4
+            },
+            "weight": 94,
+            "network": null,
+            "webChannel": {
+                "id": 287,
+                "name": "Disney+",
+                "country": null
+            },
+            "externals": {
+                "tvrage": 19187,
+                "thetvdb": 83268,
+                "imdb": "tt0458290"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/237/593387.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/237/593387.jpg"
+            },
+            "summary": "<p>The Clone Wars television series chronicles the events taking place between Star Wars Episode II: Attack of the Clones and Star Wars Episode III: Revenge of the Sith. The Clone Wars will ultimately lead to the downfall of the Jedi and the rise of the Galactic Empire.</p>",
+            "updated": 1608587336,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/563"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1806588"
+                }
+            }
+        }
+    },
+    {
+        "score": 25.42179,
+        "show": {
+            "id": 36483,
+            "url": "https://www.tvmaze.com/shows/36483/star-wars-resistance",
+            "name": "Star Wars Resistance",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "2018-10-07",
+            "officialSite": "https://disneynow.com/shows/star-wars-resistance",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 6.4
+            },
+            "weight": 57,
+            "network": {
+                "id": 78,
+                "name": "Disney Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 351575,
+                "imdb": "tt8336340"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/212/531887.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/212/531887.jpg"
+            },
+            "summary": "<p><b>Star Wars Resistance</b> follows Kazuda Xiono, a young pilot recruited by the Resistance and tasked with a top-secret mission to spy on the growing threat of the First Order.</p>",
+            "updated": 1598877519,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/36483"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1770421"
+                }
+            }
+        }
+    },
+    {
+        "score": 20.919327,
+        "show": {
+            "id": 43403,
+            "url": "https://www.tvmaze.com/shows/43403/star-wars-roll-out",
+            "name": "Star Wars Roll Out",
+            "type": "Animation",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 5,
+            "premiered": "2019-08-09",
+            "officialSite": "https://lol.disney.com/star-wars-kids/video/star-wars-roll-out",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": null,
+            "summary": "<p><b>Star Wars Roll Out</b> is a series of whimsical animated shorts featuring new adventures in a charming and unique animation style. Join Rey, Chewbacca, BB-8, the porgs, and other favorite characters from a galaxy far, far away, in a bright and colorful art style perfect for children and adults!</p>",
+            "updated": 1572682655,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/43403"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1750458"
+                }
+            }
+        }
+    },
+    {
+        "score": 20.660656,
+        "show": {
+            "id": 49190,
+            "url": "https://www.tvmaze.com/shows/49190/star-wars-the-bad-batch",
+            "name": "Star Wars: The Bad Batch",
+            "type": "Animation",
+            "language": "English",
+            "genres": [],
+            "status": "In Development",
+            "runtime": 30,
+            "premiered": "2021-05-04",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 99,
+            "network": null,
+            "webChannel": {
+                "id": 287,
+                "name": "Disney+",
+                "country": null
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 385376,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/301/753666.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/301/753666.jpg"
+            },
+            "summary": "<p><b>Star Wars: The Bad Batch</b> follows the elite and experimental clones of the Bad Batch (first introduced in \"The Clone Wars\") as they find their way in a rapidly changing galaxy in the immediate aftermath of the Clone War. Members of Bad Batch—a unique squad of clones who vary genetically from their brothers in the Clone Army - each possess a singular exceptional skill that makes them extraordinarily effective soldiers and a formidable crew.</p>",
+            "updated": 1617145004,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/49190"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2038022"
+                }
+            }
+        }
+    },
+    {
+        "score": 19.30467,
+        "show": {
+            "id": 45320,
+            "url": "https://www.tvmaze.com/shows/45320/star-wars-jedi-temple-challenge",
+            "name": "Star Wars: Jedi Temple Challenge",
+            "type": "Game Show",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 22,
+            "premiered": "2020-06-10",
+            "officialSite": "https://lol.disney.com/star-wars-kids/jedi-temple-challenge",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 31,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 373220,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/258/647356.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/258/647356.jpg"
+            },
+            "summary": "<p><b>Star Wars: Jedi Temple Challenge</b>, set in a galaxy far, far away, will test young contestants' abilities in the core Jedi principles of strength, knowledge, and bravery as they face thrilling and fun obstacles in an attempt to achieve the rank of Jedi Knight! From lightsabers to hyperspace, the Force, and the dark side, Jedi Temple Challenge transports viewers and contestants into the Star Wars galaxy like never before.</p>",
+            "updated": 1595757376,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/45320"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1892017"
+                }
+            }
+        }
+    },
+    {
+        "score": 19.284494,
+        "show": {
+            "id": 39912,
+            "url": "https://www.tvmaze.com/shows/39912/star-wars-galaxy-of-adventures",
+            "name": "Star Wars Galaxy of Adventures",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Adventure",
+                "Children",
+                "Science-Fiction"
+            ],
+            "status": "Running",
+            "runtime": 2,
+            "premiered": "2018-11-30",
+            "officialSite": "http://starwarskids.com",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 75,
+            "network": {
+                "id": 25,
+                "name": "Disney XD",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 356114,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/176/440054.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/176/440054.jpg"
+            },
+            "summary": "<p><b>Star Wars Galaxy of Adventures</b> is a series of animated shorts celebrating the characters and stories of a galaxy far, far away, featuring a bright and colorful art style, exciting action, and insight into the saga's greatest themes!</p>",
+            "updated": 1604084838,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/39912"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1961316"
+                }
+            }
+        }
+    },
+    {
+        "score": 18.041357,
+        "show": {
+            "id": 49698,
+            "url": "https://www.tvmaze.com/shows/49698/the-science-of-star-wars",
+            "name": "The Science of Star Wars",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2005-05-16",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 66,
+                "name": "Discovery Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 269161,
+                "imdb": "tt0458284"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/268/670349.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/268/670349.jpg"
+            },
+            "summary": "The characters of Star Wars may live in a galaxy far, far away, but how close are we to having droids drive us to work or cook us dinner on this planet? Fans can watch a three-day miniseries on Discovery Channel called <b>The Science of Star Wars</b> to learn about real-life robots, high-tech weapons and even hot rods of the future.",
+            "updated": 1597378000,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/49698"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1914143"
+                }
+            }
+        }
+    },
+    {
+        "score": 35.459625,
+        "show": {
+            "id": 490,
+            "url": "https://www.tvmaze.com/shows/490/star-trek",
+            "name": "Star Trek",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "1964-06-24",
+            "officialSite": null,
+            "schedule": {
+                "time": "20:30",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.3
+            },
+            "weight": 94,
+            "network": {
+                "id": 1,
+                "name": "NBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 5333,
+                "thetvdb": 77526,
+                "imdb": "tt0060028"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730791.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730791.jpg"
+            },
+            "summary": "<p>The original <b>Star Trek</b> series focuses on the 23rd century adventures of Captain James T. Kirk and the U.S.S. <i>Enterprise </i>(NCC-1701), a powerful interstellar spacecraft dispatched by Earth-based Starfleet Command to explore the galaxy. Kirk commands a crew of 430 men and women aboard his starship, which can travel at speeds surpassing the speed of light. Kirk's five-year mission—and his mandate from Starfleet—is to seek out new life and new civilizations, and to boldly go where no man has gone before.</p>",
+            "updated": 1616305321,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/490"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/44455"
+                }
+            }
+        }
+    },
+    {
+        "score": 30.897243,
+        "show": {
+            "id": 7480,
+            "url": "https://www.tvmaze.com/shows/7480/star-trek-discovery",
+            "name": "Star Trek: Discovery",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "premiered": "2017-09-24",
+            "officialSite": "http://www.cbs.com/shows/star-trek-discovery/",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 7.8
+            },
+            "weight": 98,
+            "network": null,
+            "webChannel": {
+                "id": 107,
+                "name": "Paramount+",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 328711,
+                "imdb": "tt5171438"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730792.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730792.jpg"
+            },
+            "summary": "<p>Star Trek, one of the most iconic and influential global television franchises, returns 50 years after it first premiered, with <b>Star Trek: Discovery</b>. The series will feature a new ship, new characters and new missions, while embracing the same ideology and hope for the future that inspired a generation of dreamers and doers.</p>",
+            "updated": 1615593431,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/7480"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1950370"
+                }
+            }
+        }
+    },
+    {
+        "score": 30.894035,
+        "show": {
+            "id": 42193,
+            "url": "https://www.tvmaze.com/shows/42193/star-trek-picard",
+            "name": "Star Trek: Picard",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Science-Fiction"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "premiered": "2020-01-23",
+            "officialSite": "https://www.cbs.com/shows/star-trek-picard/",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 99,
+            "network": null,
+            "webChannel": {
+                "id": 107,
+                "name": "Paramount+",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 364093,
+                "imdb": "tt8806524"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730793.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730793.jpg"
+            },
+            "summary": "<p>The series is set 20 years after Jean-Luc Picard's last appearance in <i>Star Trek: Nemesis</i> (2002), and follows him in the next chapter of his life.</p>",
+            "updated": 1610079239,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/42193"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1760966"
+                }
+            }
+        }
+    },
+    {
+        "score": 30.224817,
+        "show": {
+            "id": 492,
+            "url": "https://www.tvmaze.com/shows/492/star-trek-voyager",
+            "name": "Star Trek: Voyager",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "1995-01-16",
+            "officialSite": null,
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 94,
+            "network": {
+                "id": 70,
+                "name": "UPN",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5338,
+                "thetvdb": 74550,
+                "imdb": "tt0112178"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730797.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730797.jpg"
+            },
+            "summary": "<p><b>Star Trek: Voyager</b> (VOY) focuses on the 24th century adventures of Captain Kathryn Janeway aboard the U.S.S. Voyager. Smaller than either Kirk's or Picard's starships—its crew complement is only 150—Voyager is fast and powerful, and has the ability to land on a planet's surface. It is one of the most technologically advanced vessels in Starfleet, utilizing computer circuitry that incorporates synthetic neural tissue. Ironically, Janeway's inaugural mission aboard Voyager was to be her last in the Alpha quadrant. While attempting to capture the crew of a renegade Maquis vessel, both her ship and that of the Maquis were pulled into the distant Delta quadrant by powerful alien technology. Unfortunately, there would be no similar \"express\" route to take them home again. Stranded 70,000 light-years from Earth, Janeway convinced the Maquis to join her Starfleet crew and serve together during the long voyage back to Federation space.</p>",
+            "updated": 1610079680,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/492"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/44806"
+                }
+            }
+        }
+    },
+    {
+        "score": 30.07796,
+        "show": {
+            "id": 49333,
+            "url": "https://www.tvmaze.com/shows/49333/star-trek-prodigy",
+            "name": "Star Trek: Prodigy",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "In Development",
+            "runtime": null,
+            "premiered": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 97,
+            "network": null,
+            "webChannel": {
+                "id": 107,
+                "name": "Paramount+",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/265/664888.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/265/664888.jpg"
+            },
+            "summary": "<p><b>Star Trek: Prodigy</b> follows a group of lawless teens who discover a derelict Starfleet ship and use it to search for adventure, meaning and salvation.</p>",
+            "updated": 1614210042,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/49333"
+                }
+            }
+        }
+    },
+    {
+        "score": 29.44296,
+        "show": {
+            "id": 2173,
+            "url": "https://www.tvmaze.com/shows/2173/star-trek-continues",
+            "name": "Star Trek Continues",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 45,
+            "premiered": "2013-05-24",
+            "officialSite": "http://www.startrekcontinues.com/",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 89,
+            "network": null,
+            "webChannel": {
+                "id": 16,
+                "name": "startrekcontinues.com",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": 46942,
+                "thetvdb": 264220,
+                "imdb": "tt2732442"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/105/263130.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/105/263130.jpg"
+            },
+            "summary": "<p><b>Star Trek Continues </b>is a fan-created science fiction series set in the <i>Star Trek </i>universe produced by Trek Continues Inc., Far From Home, and Dracogen. The series is an unofficial direct continuation of the third and last season of <i>Star Trek: The Original Series</i>, whose visual and storytelling features have been reproduced to recreate the same look-and-feel.</p><p>As with all such <i>Star Trek</i> fan productions, use of copyrighted and trademarked properties from the original series was allowed so long as the production is not-for-profit. Part of the funds necessary to produce the episodes were raised through a successful Kickstarter campaign, to which almost three thousand backers contributed.</p><p><i>Star Trek Continues</i> won a <i>Geekie Award</i> for \"Best Web Series\" in 2014 and has been very positively received by the critics, who praised the quality of the production, stating that the series has set a new standard for <i>Star Trek</i> fan productions.</p>",
+            "updated": 1594702808,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/2173"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1336446"
+                }
+            }
+        }
+    },
+    {
+        "score": 29.211748,
+        "show": {
+            "id": 714,
+            "url": "https://www.tvmaze.com/shows/714/star-trek-enterprise",
+            "name": "Star Trek: Enterprise",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2001-09-26",
+            "officialSite": null,
+            "schedule": {
+                "time": "12:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 92,
+            "network": {
+                "id": 70,
+                "name": "UPN",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5335,
+                "thetvdb": 73893,
+                "imdb": "tt0244365"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730796.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730796.jpg"
+            },
+            "summary": "<p><b>Star Trek: Enterprise</b> (ENT) focuses on the 22nd century adventures of Captain Jonathan Archer aboard the Enterprise NX-01 during the early days of interstellar travel. The NX designation indicates that this Enterprise is an experimental prototype; Unlike the starships of the four other <i>Star Trek </i>series, this Enterprise doesn't have deflector shields or phasers, but it does come equipped with a phase cannon and a rudimentary transporter that functions efficiently most of the time.</p>",
+            "updated": 1614908019,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/714"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/63356"
+                }
+            }
+        }
+    },
+    {
+        "score": 29.161322,
+        "show": {
+            "id": 49943,
+            "url": "https://www.tvmaze.com/shows/49943/star-trek-odyssey",
+            "name": "Star Trek: Odyssey",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "2007-09-01",
+            "officialSite": "http://www.hiddenfrontier.net/productions/ody/",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Saturday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 97,
+            "network": null,
+            "webChannel": {
+                "id": 21,
+                "name": "YouTube",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 126391,
+                "imdb": "tt2074442"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730803.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730803.jpg"
+            },
+            "summary": "<p>A Star Trek fan production based on the Homer's The Odyssey telling the story of a spaceship trying to go home after getting lost in the Andromeda Galaxy.</p>",
+            "updated": 1610081450,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/49943"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1920086"
+                }
+            }
+        }
+    },
+    {
+        "score": 27.03414,
+        "show": {
+            "id": 53273,
+            "url": "https://www.tvmaze.com/shows/53273/star-trek-section-31",
+            "name": "Star Trek: Section 31",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Science-Fiction"
+            ],
+            "status": "In Development",
+            "runtime": null,
+            "premiered": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 99,
+            "network": null,
+            "webChannel": {
+                "id": 107,
+                "name": "Paramount+",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt9603060"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/296/741269.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/296/741269.jpg"
+            },
+            "summary": "<p>CBS All Access today announced plans to further expand the \"Star Trek\" universe with a new live-action series in development starring Michelle Yeoh. The series will expand on Yeoh's current role as a member of Starfleet's Section 31 division, a shadow organization within the Federation, on <i>Star Trek: Discovery</i>, which debuts its second season Thursday, Jan. 17 exclusively on CBS All Access in the U.S., and is distributed concurrently by CBS Studios International on Netflix in 188 countries and in Canada on Bell Media's Space channel and OTT service CraveTV. The series will be produced by CBS Television Studios, Secret Hideout and Roddenberry Entertainment. Alex Kurtzman, Heather Kadin, Rod Roddenberry and Trevor Roth will serve as executive producers. Aaron Baiers will serve as co-executive producer along with Bo Yeon Kim, and Erika Lippoldt will also write the series.</p>",
+            "updated": 1613220613,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/53273"
+                }
+            }
+        }
+    },
+    {
+        "score": 26.697348,
+        "show": {
+            "id": 39323,
+            "url": "https://www.tvmaze.com/shows/39323/star-trek-lower-decks",
+            "name": "Star Trek: Lower Decks",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Science-Fiction"
+            ],
+            "status": "Running",
+            "runtime": 25,
+            "premiered": "2020-08-06",
+            "officialSite": "https://www.cbs.com/shows/star-trek-lower-decks/",
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 6.9
+            },
+            "weight": 95,
+            "network": null,
+            "webChannel": {
+                "id": 107,
+                "name": "Paramount+",
+                "country": null
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 367138,
+                "imdb": "tt9184820"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730795.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730795.jpg"
+            },
+            "summary": "<p><b>Star Trek: Lower Decks</b> focuses on the support crew serving on one of Starfleet's least important ships, the U.S.S. Cerritos, in 2380. Ensigns Mariner, Boimler, Rutherford and Tendi have to keep up with their duties and their social lives, often while the ship is being rocked by a multitude of sci-fi anomalies.</p>",
+            "updated": 1610079528,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/39323"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1907775"
+                }
+            }
+        }
+    },
+    {
+        "score": 23.398613,
+        "show": {
+            "id": 50361,
+            "url": "https://www.tvmaze.com/shows/50361/csi-vegas",
+            "name": "CSI: Vegas",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [],
+            "status": "In Development",
+            "runtime": 60,
+            "premiered": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt12887536"
+            },
+            "image": null,
+            "summary": "<p>With <b>CSI: Vegas</b>, the most watched drama series of the 21st century, CSI, opens a brand new chapter in Las Vegas, the city where it all began. Facing an existential threat that could bring down the Crime Lab, a brilliant team of forensic investigators must welcome back old friends and deploy new techniques to preserve and serve justice in Sin City.</p>",
+            "updated": 1617233688,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/50361"
+                }
+            }
+        }
+    },
+    {
+        "score": 22.584925,
+        "show": {
+            "id": 576,
+            "url": "https://www.tvmaze.com/shows/576/csi-miami",
+            "name": "CSI: Miami",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2002-09-23",
+            "officialSite": null,
+            "schedule": {
+                "time": "12:00",
+                "days": []
+            },
+            "rating": {
+                "average": 7.9
+            },
+            "weight": 84,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 3184,
+                "thetvdb": 78310,
+                "imdb": "tt0313043"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/4/11828.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/11828.jpg"
+            },
+            "summary": "<p><b>CSI: Miami</b> is a drama that follows a South Florida team of forensic investigators who use both cutting-edge scientific methods and old-fashioned police work to solve crimes.<br><br> Horatio Caine, a former homicide detective, heads a group of investigators who work crimes amid the steamy tropical surroundings and cultural crossroads of Miami. His team includes Calleigh Duquesne, a bilingual Southern beauty with a specialty in ballistics; Eric Delko, an underwater recovery expert who knows all the twists and turns of the Florida waterways, and Ryan Wolfe, a former patrol officer who specializes in blood and trace evidence.<br><br> Rounding out the team is Alexx Woods, the no-nonsense know-it-all coroner, and Natalia Boa Vista, the enigmatic DNA specialist. Helping Horatio with cases is Det. Frank Tripp, a tough yet thorough police officer.<br><br> Together, these investigators collect and analyze the evidence to solve the crimes and to avenge those who cannot speak for themselves--the victims.</p>",
+            "updated": 1612829874,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/576"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/54643"
+                }
+            }
+        }
+    },
+    {
+        "score": 22.430984,
+        "show": {
+            "id": 749,
+            "url": "https://www.tvmaze.com/shows/749/csi-ny",
+            "name": "CSI: NY",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Crime"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2004-09-22",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.9
+            },
+            "weight": 85,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 3185,
+                "thetvdb": 73696,
+                "imdb": "tt0395843"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/6/15173.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/6/15173.jpg"
+            },
+            "summary": "<p>The third edition of the <i>CSI</i> franchise sets up shop in the Big Apple, where taciturn former Marine, Detective Mac Taylor leads a crime-solving team of police officers and forensics specialists. In the city that never sleeps, <b>CSI: NY</b> never rests, and while people may lie, the evidence rarely does.</p>",
+            "updated": 1609942510,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/749"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/66225"
+                }
+            }
+        }
+    },
+    {
+        "score": 18.745605,
+        "show": {
+            "id": 735,
+            "url": "https://www.tvmaze.com/shows/735/csi-cyber",
+            "name": "CSI: Cyber",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Crime"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2015-03-04",
+            "officialSite": "http://www.cbs.com/shows/csi-cyber",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 6.9
+            },
+            "weight": 52,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 41239,
+                "thetvdb": 281551,
+                "imdb": "tt3560060"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/47/119954.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/47/119954.jpg"
+            },
+            "summary": "<p><b>CSI: Cyber </b>is a drama inspired by the advanced technological work of real-life Cyber Psychologist Mary Aiken. Special Agent Avery Ryan heads the Cyber Crime Division of the FBI, a unit at the forefront of solving illegal activities that start in the mind, live online and play out in the real world. While other FBI agents search for criminals in dark homes and alleys, Ryan and her team search the \"dark net,\" a place deep in the bowels of the Web where criminals are anonymous, money is untraceable and where everything is for sale with just a keystroke.</p>",
+            "updated": 1577689764,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/735"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/621666"
+                }
+            }
+        }
+    },
+    {
+        "score": 17.357265,
+        "show": {
+            "id": 109,
+            "url": "https://www.tvmaze.com/shows/109/csi-crime-scene-investigation",
+            "name": "CSI: Crime Scene Investigation",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Crime"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2000-10-06",
+            "officialSite": "http://www.cbs.com/shows/csi/",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.4
+            },
+            "weight": 93,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 3183,
+                "thetvdb": 72546,
+                "imdb": "tt0247082"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/0/887.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/0/887.jpg"
+            },
+            "summary": "<p><b>CSI: Crime Scene Investigation</b> is a drama about a team of forensic investigators trained to solve criminal cases by scouring the crime scene, collecting irrefutable evidence and finding the missing pieces that solve the mystery.</p>",
+            "updated": 1610148927,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/109"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/270033"
+                }
+            }
+        }
+    },
+    {
+        "score": 15.401288,
+        "show": {
+            "id": 13317,
+            "url": "https://www.tvmaze.com/shows/13317/jurassic-csi",
+            "name": "Jurassic CSI",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Adventure",
+                "History"
+            ],
+            "status": "Ended",
+            "runtime": 45,
+            "premiered": "2011-07-07",
+            "officialSite": "http://www.natgeotv.com/ca/jurassic-csi",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 42,
+                "name": "National Geographic Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 253030,
+                "imdb": "tt1945727"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/46/115180.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/46/115180.jpg"
+            },
+            "summary": "<p>In <b>Jurassic CSI</b>, dino detective Dr. Phil Manning launches a full-scale investigation to unearth how dinosaurs really looked and lived. <i>Jurassic CSI</i> goes into the minds, under the skin and inside the bones of the biggest, most impressive beasts ever to walk the planet. Dr. Manning doesn't stick to convention – or even his own discipline – on his perpetual quest to expand what we know about dinosaurs. With privileged access to some of the world's most sophisticated technologies – from crime scene 3D mapping technology to an image machine one million times stronger than a chest X-ray – <i>Jurassic CSI</i> challenges long – held assumptions and poses radical questions about our understanding of dinosaurs.</p>",
+            "updated": 1505173816,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/13317"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/627547"
+                }
+            }
+        }
+    },
+    {
+        "score": 13.259547,
+        "show": {
+            "id": 42002,
+            "url": "https://www.tvmaze.com/shows/42002/forensics-the-real-csi",
+            "name": "Forensics: The Real CSI",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Crime"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2019-05-01",
+            "officialSite": "https://www.bbc.co.uk/programmes/m0004p7f",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 78,
+            "network": {
+                "id": 37,
+                "name": "BBC Two",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 362856,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/194/485316.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/194/485316.jpg"
+            },
+            "summary": "<p>Multiple cameras follow serious crime investigations in real time, revealing the crucial role cutting-edge forensic science now plays in bringing criminals to justice.</p>",
+            "updated": 1612829851,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/42002"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2028566"
+                }
+            }
+        }
+    },
+    {
+        "score": 13.015054,
+        "show": {
+            "id": 37924,
+            "url": "https://www.tvmaze.com/shows/37924/csi-crime-scene-talks",
+            "name": "CSI: Crime Scene Talks",
+            "type": "Scripted",
+            "language": "Japanese",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Mystery"
+            ],
+            "status": "Running",
+            "runtime": 54,
+            "premiered": "2011-04-13",
+            "officialSite": "http://www.tv-asahi.co.jp/iryu_2018/",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 263,
+                "name": "TV Asahi",
+                "country": {
+                    "name": "Japan",
+                    "code": "JP",
+                    "timezone": "Asia/Tokyo"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 249250,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/162/406336.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/162/406336.jpg"
+            },
+            "summary": "<p>At the Metropolitan Police Department First Investigation Scientific Criminal Unit lead investigator Satoshi Itomura leaves no stones unturned at crime scenes to apprehend the perpetrators. Rookie investigator Miyuki Oda doesn't seem cut out to be a detective, but possesses a keen sense to gather information from crime scenes. Miyuki Oda learns from Satoshi Itomura the ins and outs of detective work as they tackle difficult cases.</p>",
+            "updated": 1592759500,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/37924"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1534656"
+                }
+            }
+        }
+    },
+    {
+        "score": 3.5382671,
+        "show": {
+            "id": 24371,
+            "url": "https://www.tvmaze.com/shows/24371/the-chi",
+            "name": "The Chi",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2018-01-07",
+            "officialSite": "http://www.sho.com/the-chi",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 6.4
+            },
+            "weight": 70,
+            "network": {
+                "id": 9,
+                "name": "Showtime",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 336602,
+                "imdb": "tt6294706"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/240/602056.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/240/602056.jpg"
+            },
+            "summary": "<p><b>The Chi</b> is a timely coming-of-age story centering on a group of residents who become linked by coincidence but bonded by the need for connection and redemption. Kevin is the pre-teen who must step past shattered illusions and embrace the normal rites of childhood, while Brandon the dreamer makes his own nearly impossible leap of faith to succeed in life and love with girlfriend Jerrika. Emmett is the carefree teen is thrust into complex responsibility with guidance from his mother Jada, and Ronnie is the drifter whose struggle to love and be loved calls into question his every pursuit.</p>",
+            "updated": 1616091266,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/24371"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1898472"
+                },
+                "nextepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2049419"
+                }
+            }
+        }
+    },
+    {
+        "score": 2.7010016,
+        "show": {
+            "id": 42416,
+            "url": "https://www.tvmaze.com/shows/42416/psi",
+            "name": "Psi",
+            "type": "Scripted",
+            "language": "Portuguese",
+            "genres": [
+                "Drama"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2014-03-23",
+            "officialSite": "https://br.hbomax.tv/serie/PSI-Temporada-01/501247",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 266,
+                "name": "HBO Latin America",
+                "country": {
+                    "name": "Brazil",
+                    "code": "BR",
+                    "timezone": "America/Noronha"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 280063,
+                "imdb": "tt3637900"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/200/501746.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/200/501746.jpg"
+            },
+            "summary": "<p><b>Psi</b> is a drama with comic touches telling the story of Carlo Antonini, a psychoanalyst that's averagely pathologic and very interventionist, both inside and outside the office.</p>",
+            "updated": 1575598661,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/42416"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1664701"
+                }
+            }
+        }
+    }
+]

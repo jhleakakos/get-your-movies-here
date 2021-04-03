@@ -41,7 +41,7 @@ pull from api based on data stored in local db
 
 need to store locally:
 
-show id
+show id - hits /shows/id
 show name
 show genres
 url to show poster
