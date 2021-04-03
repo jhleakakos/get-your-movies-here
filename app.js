@@ -32,6 +32,77 @@ app.get('/shows/:id/edit', (req, res) => {
 
 
 
+/*
+Database Setup
+
+store certain fields in local db to handle inventory and user info
+pull from api based on data stored in local db
+
+
+need to store locally:
+
+show id
+show name
+show genres
+url to show poster
+show summary
+
+with these data points stored locally, we can display this info along with whatever else we gather for the app without hitting the api
+since we link to the show poster url instead of getting that from the api, we can still cut down on api calls
+
+
+
+json schema
+
+{
+    score: float,
+    show: {
+        id: int,
+        url: tvmaze url string,
+        name: string,
+        type: string,
+        language: string,
+        genres: [string],
+        status: string,
+        runtime: int,
+        premiered: string representation of date,
+        officialSite: url string,
+        schedule: {
+            time: string representation of time,
+            days: [days of week as string]
+        },
+        rating: {
+            average: float
+        },
+        weight: int,
+        network: {
+            id: int,
+            name: string,
+            country: {
+                name: string,
+                code: string,
+                timezone: string
+            },
+        },
+        webChannel: something,
+        externals: {
+            tvrage: int,
+            thetvdb: int,
+            imdb: string
+        },
+        image: {
+            medium: url string,
+            original: url string
+        },
+        summary: string,
+        updated: int but probably datetime representation,
+        _links: {
+            self {href: url},
+            previousepisode: {href: string}
+        }
+    }
+}
+*/
 
 
 
