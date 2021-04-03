@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: path.join(__dirname, 'views') });
+    res.render('index');
 })
 
 
