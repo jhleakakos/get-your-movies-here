@@ -12,6 +12,21 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     res.render('index');
 })
+app.get('/shows', (req, res) => {
+    res.send('lookin\' at some tv shows');
+})
+
+app.get('/shows/new', (req, res) => {
+    res.send('render form for new shows')
+})
+
+app.get('/shows/:id', (req, res) => {
+    res.send('show page for individual tv show');
+})
+
+app.get('/shows/:id/edit', (req, res) => {
+    res.send('form to edit tv show');
+})
 
 
 
