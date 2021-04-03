@@ -1,0 +1,543 @@
+[
+  {
+    "score": 35.459625,
+    "show": {
+      "id": 490,
+      "url": "https://www.tvmaze.com/shows/490/star-trek",
+      "name": "Star Trek",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "premiered": "1964-06-24",
+      "officialSite": null,
+      "schedule": {
+        "time": "20:30",
+        "days": [
+          "Friday"
+        ]
+      },
+      "rating": {
+        "average": 8.3
+      },
+      "weight": 94,
+      "network": {
+        "id": 1,
+        "name": "NBC",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 5333,
+        "thetvdb": 77526,
+        "imdb": "tt0060028"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730791.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730791.jpg"
+      },
+      "summary": "<p>The original <b>Star Trek</b> series focuses on the 23rd century adventures of Captain James T. Kirk and the U.S.S. <i>Enterprise </i>(NCC-1701), a powerful interstellar spacecraft dispatched by Earth-based Starfleet Command to explore the galaxy. Kirk commands a crew of 430 men and women aboard his starship, which can travel at speeds surpassing the speed of light. Kirk's five-year mission—and his mandate from Starfleet—is to seek out new life and new civilizations, and to boldly go where no man has gone before.</p>",
+      "updated": 1616305321,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/490"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/44455"
+        }
+      }
+    }
+  },
+  {
+    "score": 30.897243,
+    "show": {
+      "id": 7480,
+      "url": "https://www.tvmaze.com/shows/7480/star-trek-discovery",
+      "name": "Star Trek: Discovery",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "premiered": "2017-09-24",
+      "officialSite": "http://www.cbs.com/shows/star-trek-discovery/",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Thursday"
+        ]
+      },
+      "rating": {
+        "average": 7.8
+      },
+      "weight": 98,
+      "network": null,
+      "webChannel": {
+        "id": 107,
+        "name": "Paramount+",
+        "country": null
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 328711,
+        "imdb": "tt5171438"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730792.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730792.jpg"
+      },
+      "summary": "<p>Star Trek, one of the most iconic and influential global television franchises, returns 50 years after it first premiered, with <b>Star Trek: Discovery</b>. The series will feature a new ship, new characters and new missions, while embracing the same ideology and hope for the future that inspired a generation of dreamers and doers.</p>",
+      "updated": 1615593431,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/7480"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1950370"
+        }
+      }
+    }
+  },
+  {
+    "score": 30.894035,
+    "show": {
+      "id": 42193,
+      "url": "https://www.tvmaze.com/shows/42193/star-trek-picard",
+      "name": "Star Trek: Picard",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "premiered": "2020-01-23",
+      "officialSite": "https://www.cbs.com/shows/star-trek-picard/",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Thursday"
+        ]
+      },
+      "rating": {
+        "average": 8.2
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 107,
+        "name": "Paramount+",
+        "country": null
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 364093,
+        "imdb": "tt8806524"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730793.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730793.jpg"
+      },
+      "summary": "<p>The series is set 20 years after Jean-Luc Picard's last appearance in <i>Star Trek: Nemesis</i> (2002), and follows him in the next chapter of his life.</p>",
+      "updated": 1610079239,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/42193"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1760966"
+        }
+      }
+    }
+  },
+  {
+    "score": 30.224817,
+    "show": {
+      "id": 492,
+      "url": "https://www.tvmaze.com/shows/492/star-trek-voyager",
+      "name": "Star Trek: Voyager",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "premiered": "1995-01-16",
+      "officialSite": null,
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Wednesday"
+        ]
+      },
+      "rating": {
+        "average": 8.2
+      },
+      "weight": 94,
+      "network": {
+        "id": 70,
+        "name": "UPN",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "externals": {
+        "tvrage": 5338,
+        "thetvdb": 74550,
+        "imdb": "tt0112178"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730797.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730797.jpg"
+      },
+      "summary": "<p><b>Star Trek: Voyager</b> (VOY) focuses on the 24th century adventures of Captain Kathryn Janeway aboard the U.S.S. Voyager. Smaller than either Kirk's or Picard's starships—its crew complement is only 150—Voyager is fast and powerful, and has the ability to land on a planet's surface. It is one of the most technologically advanced vessels in Starfleet, utilizing computer circuitry that incorporates synthetic neural tissue. Ironically, Janeway's inaugural mission aboard Voyager was to be her last in the Alpha quadrant. While attempting to capture the crew of a renegade Maquis vessel, both her ship and that of the Maquis were pulled into the distant Delta quadrant by powerful alien technology. Unfortunately, there would be no similar \"express\" route to take them home again. Stranded 70,000 light-years from Earth, Janeway convinced the Maquis to join her Starfleet crew and serve together during the long voyage back to Federation space.</p>",
+      "updated": 1610079680,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/492"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/44806"
+        }
+      }
+    }
+  },
+  {
+    "score": 30.07796,
+    "show": {
+      "id": 49333,
+      "url": "https://www.tvmaze.com/shows/49333/star-trek-prodigy",
+      "name": "Star Trek: Prodigy",
+      "type": "Animation",
+      "language": "English",
+      "genres": [
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "In Development",
+      "runtime": null,
+      "premiered": null,
+      "officialSite": null,
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 97,
+      "network": null,
+      "webChannel": {
+        "id": 107,
+        "name": "Paramount+",
+        "country": null
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": null
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/265/664888.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/265/664888.jpg"
+      },
+      "summary": "<p><b>Star Trek: Prodigy</b> follows a group of lawless teens who discover a derelict Starfleet ship and use it to search for adventure, meaning and salvation.</p>",
+      "updated": 1614210042,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/49333"
+        }
+      }
+    }
+  },
+  {
+    "score": 29.44296,
+    "show": {
+      "id": 2173,
+      "url": "https://www.tvmaze.com/shows/2173/star-trek-continues",
+      "name": "Star Trek Continues",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": 45,
+      "premiered": "2013-05-24",
+      "officialSite": "http://www.startrekcontinues.com/",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Monday"
+        ]
+      },
+      "rating": {
+        "average": 8.2
+      },
+      "weight": 89,
+      "network": null,
+      "webChannel": {
+        "id": 16,
+        "name": "startrekcontinues.com",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "externals": {
+        "tvrage": 46942,
+        "thetvdb": 264220,
+        "imdb": "tt2732442"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/105/263130.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/105/263130.jpg"
+      },
+      "summary": "<p><b>Star Trek Continues </b>is a fan-created science fiction series set in the <i>Star Trek </i>universe produced by Trek Continues Inc., Far From Home, and Dracogen. The series is an unofficial direct continuation of the third and last season of <i>Star Trek: The Original Series</i>, whose visual and storytelling features have been reproduced to recreate the same look-and-feel.</p><p>As with all such <i>Star Trek</i> fan productions, use of copyrighted and trademarked properties from the original series was allowed so long as the production is not-for-profit. Part of the funds necessary to produce the episodes were raised through a successful Kickstarter campaign, to which almost three thousand backers contributed.</p><p><i>Star Trek Continues</i> won a <i>Geekie Award</i> for \"Best Web Series\" in 2014 and has been very positively received by the critics, who praised the quality of the production, stating that the series has set a new standard for <i>Star Trek</i> fan productions.</p>",
+      "updated": 1594702808,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/2173"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1336446"
+        }
+      }
+    }
+  },
+  {
+    "score": 29.211748,
+    "show": {
+      "id": 714,
+      "url": "https://www.tvmaze.com/shows/714/star-trek-enterprise",
+      "name": "Star Trek: Enterprise",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "premiered": "2001-09-26",
+      "officialSite": null,
+      "schedule": {
+        "time": "12:00",
+        "days": [
+          "Friday"
+        ]
+      },
+      "rating": {
+        "average": 8.2
+      },
+      "weight": 92,
+      "network": {
+        "id": 70,
+        "name": "UPN",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "externals": {
+        "tvrage": 5335,
+        "thetvdb": 73893,
+        "imdb": "tt0244365"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730796.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730796.jpg"
+      },
+      "summary": "<p><b>Star Trek: Enterprise</b> (ENT) focuses on the 22nd century adventures of Captain Jonathan Archer aboard the Enterprise NX-01 during the early days of interstellar travel. The NX designation indicates that this Enterprise is an experimental prototype; Unlike the starships of the four other <i>Star Trek </i>series, this Enterprise doesn't have deflector shields or phasers, but it does come equipped with a phase cannon and a rudimentary transporter that functions efficiently most of the time.</p>",
+      "updated": 1614908019,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/714"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/63356"
+        }
+      }
+    }
+  },
+  {
+    "score": 29.161322,
+    "show": {
+      "id": 49943,
+      "url": "https://www.tvmaze.com/shows/49943/star-trek-odyssey",
+      "name": "Star Trek: Odyssey",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": 30,
+      "premiered": "2007-09-01",
+      "officialSite": "http://www.hiddenfrontier.net/productions/ody/",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Saturday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 97,
+      "network": null,
+      "webChannel": {
+        "id": 21,
+        "name": "YouTube",
+        "country": null
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 126391,
+        "imdb": "tt2074442"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730803.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730803.jpg"
+      },
+      "summary": "<p>A Star Trek fan production based on the Homer's The Odyssey telling the story of a spaceship trying to go home after getting lost in the Andromeda Galaxy.</p>",
+      "updated": 1610081450,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/49943"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1920086"
+        }
+      }
+    }
+  },
+  {
+    "score": 27.03414,
+    "show": {
+      "id": 53273,
+      "url": "https://www.tvmaze.com/shows/53273/star-trek-section-31",
+      "name": "Star Trek: Section 31",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Science-Fiction"
+      ],
+      "status": "In Development",
+      "runtime": null,
+      "premiered": null,
+      "officialSite": null,
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 107,
+        "name": "Paramount+",
+        "country": null
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": "tt9603060"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/296/741269.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/296/741269.jpg"
+      },
+      "summary": "<p>CBS All Access today announced plans to further expand the \"Star Trek\" universe with a new live-action series in development starring Michelle Yeoh. The series will expand on Yeoh's current role as a member of Starfleet's Section 31 division, a shadow organization within the Federation, on <i>Star Trek: Discovery</i>, which debuts its second season Thursday, Jan. 17 exclusively on CBS All Access in the U.S., and is distributed concurrently by CBS Studios International on Netflix in 188 countries and in Canada on Bell Media's Space channel and OTT service CraveTV. The series will be produced by CBS Television Studios, Secret Hideout and Roddenberry Entertainment. Alex Kurtzman, Heather Kadin, Rod Roddenberry and Trevor Roth will serve as executive producers. Aaron Baiers will serve as co-executive producer along with Bo Yeon Kim, and Erika Lippoldt will also write the series.</p>",
+      "updated": 1613220613,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/53273"
+        }
+      }
+    }
+  },
+  {
+    "score": 26.697348,
+    "show": {
+      "id": 39323,
+      "url": "https://www.tvmaze.com/shows/39323/star-trek-lower-decks",
+      "name": "Star Trek: Lower Decks",
+      "type": "Animation",
+      "language": "English",
+      "genres": [
+        "Comedy",
+        "Science-Fiction"
+      ],
+      "status": "Running",
+      "runtime": 25,
+      "premiered": "2020-08-06",
+      "officialSite": "https://www.cbs.com/shows/star-trek-lower-decks/",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Thursday"
+        ]
+      },
+      "rating": {
+        "average": 6.9
+      },
+      "weight": 95,
+      "network": null,
+      "webChannel": {
+        "id": 107,
+        "name": "Paramount+",
+        "country": null
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 367138,
+        "imdb": "tt9184820"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730795.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730795.jpg"
+      },
+      "summary": "<p><b>Star Trek: Lower Decks</b> focuses on the support crew serving on one of Starfleet's least important ships, the U.S.S. Cerritos, in 2380. Ensigns Mariner, Boimler, Rutherford and Tendi have to keep up with their duties and their social lives, often while the ship is being rocked by a multitude of sci-fi anomalies.</p>",
+      "updated": 1610079528,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/39323"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1907775"
+        }
+      }
+    }
+  }
+]
