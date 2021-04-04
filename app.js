@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
+const Show = require('./models/show');
 
 app.listen(3000, () => console.log('express listening on port 3000'));
 app.set('views', path.join(__dirname, 'views'));
@@ -23,8 +24,11 @@ mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
 app.get('/', (req, res) => {
     res.render('index');
 })
-app.get('/shows', (req, res) => {
-    res.send('lookin\' at some tv shows');
+app.get('/shows', async (req, res) => {
+    const allShows = await Show.find({});
+    res.render('shows', { allShows });
+    // console.log(allShows);
+    // res.end('looking at all shows');
 })
 
 app.get('/shows/new', (req, res) => {

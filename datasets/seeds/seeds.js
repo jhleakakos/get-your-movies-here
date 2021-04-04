@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     .catch(e => console.log(e));
 
 const seed = async () => {
-    Show.deleteMany({});
+    await Show.deleteMany();
     for (let show of showData) {
         const newShow = new Show({
             tvmazeID: show.show.id,

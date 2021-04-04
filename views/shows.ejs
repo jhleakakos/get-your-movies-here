@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your TV Shows Here</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<h1>Look At All These Great TV Shows</h1>
+
+<h2>Look at some of the hit TV shows you can rent tonight</h2>
+
+<section class="tv-show-display">
+    <% for (let show of allShows) { %>
+    <div class="tv-show">
+        <img src="<%= show.poster %>">
+        <h3><%= show.name %></h3>
+        <p><%= show.summary %></p>
+        <h4>Genres</h4>
+        <% for (let genre of show.genres) { %>
+            <ul><%= genre %></ul>
+        <% } %>
+    </div>
+    <% } %>
+</section>
+
+<body>
+
+</body>
+
+</html>
