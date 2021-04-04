@@ -17,14 +17,18 @@ const seed = async () => {
             tvmazeID: show.show.id,
             name: show.show.name,
             genres: show.show.genres,
+            //logic is if image is null, then return null
+            //else if medium is not null, then return medium
+            //else if original is not null, return original
+            //else return null
             poster: (show.show.image === null ? null :
                 (show.show.image.medium !== null ? show.show.image.medium :
                     (show.show.image.original !== null ?
                         show.show.image.original : null))),
-            summary: show.show.summary
+            summary: show.show.summary || 'needs a description'
         });
-        // await newShow.save();
-        console.log(newShow);
+        await newShow.save();
+        // console.log(newShow);
     }
 }
 
