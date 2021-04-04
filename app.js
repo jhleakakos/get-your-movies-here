@@ -2,12 +2,23 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const ejs = require('ejs');
-
-app.use(express.static(__dirname + '/public'));
+const mongoose = require('mongoose');
 
 app.listen(3000, () => console.log('express listening on port 3000'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.use(express.static(__dirname + '/public'));
+
+mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true
+})
+    .then(() => console.log('mongodb connection open on port 27017'))
+    .catch(e => console.log(e));
+
+
 
 app.get('/', (req, res) => {
     res.render('index');
