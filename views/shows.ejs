@@ -5,14 +5,19 @@
 <div class="container">
     <div class="row">
         <% for (let show of allShows) { %>
-        <div class="col-4">
+        <div class="col-3 card">
             <img src="<%= show.poster %>">
-            <h3><%= show.name %></h3>
-            <p><%= show.summary %></p>
-            <h4>Genres</h4>
-            <% for (let genre of show.genres) { %>
-                <ul><%= genre %></ul>
-            <% } %>
+            <div class="card-body">
+                <div class="card-title">
+                    <h3><%= show.name %></h3>
+                </div>
+                <p class="card-text"><%= show.summary %></p>
+                <h4>Genres</h4>
+                <% for (let genre of show.genres) { %>
+                    <ul class="list-group list-group-flush"><%= genre %></ul>
+                <% } %>
+                <a href="" class="btn btn-primary mt-5">See Details</a>
+            </div>
         </div>
         <% } %>
     </div>
