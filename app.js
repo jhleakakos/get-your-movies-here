@@ -28,17 +28,17 @@ app.get('/', (req, res) => {
 
 app.get('/shows', async (req, res) => {
     const allShows = await Show.find({});
-    res.render('tv_shows/shows', { allShows });
+    res.render('tv_shows/tv_shows', { allShows });
 })
 
 app.get('/shows/new', (req, res) => {
     res.send('render form for new shows')
 })
 
-app.get('/shows/:id', (req, res) => {
+app.get('/shows/:id', async (req, res) => {
     const { id } = req.params;
-    console.log(id);
-    res.send('show page for individual tv show');
+    const show = await Show.findById(id);
+    res.render('tv_shows/show', { show });
 })
 
 app.get('/shows/:id/edit', (req, res) => {
