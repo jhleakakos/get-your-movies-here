@@ -22,16 +22,13 @@ mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     .catch(e => console.log(e));
 
 
-
 app.get('/', (req, res) => {
     res.render('index');
 })
 
 app.get('/shows', async (req, res) => {
     const allShows = await Show.find({});
-    res.render('shows', { allShows });
-    // console.log(allShows);
-    // res.end('looking at all shows');
+    res.render('tv_shows/shows', { allShows });
 })
 
 app.get('/shows/new', (req, res) => {
@@ -39,6 +36,8 @@ app.get('/shows/new', (req, res) => {
 })
 
 app.get('/shows/:id', (req, res) => {
+    const { id } = req.params;
+    console.log(id);
     res.send('show page for individual tv show');
 })
 
