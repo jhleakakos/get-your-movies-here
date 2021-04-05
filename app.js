@@ -4,8 +4,10 @@ const path = require('path');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
 const Show = require('./models/show');
+const ejsMate = require('ejs-mate');
 
 app.listen(3000, () => console.log('express listening on port 3000'));
+app.engine('ejs', ejsMate);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -24,6 +26,7 @@ mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
 app.get('/', (req, res) => {
     res.render('index');
 })
+
 app.get('/shows', async (req, res) => {
     const allShows = await Show.find({});
     res.render('shows', { allShows });
