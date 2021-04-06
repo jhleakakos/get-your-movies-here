@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const path = require('path');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
