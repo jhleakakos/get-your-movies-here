@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
     res.render('index');
 })
 
+app.get('/about', (req, res) => {
+    res.render('about');
+})
+
 app.get('/shows', async (req, res) => {
     const allShows = await Show.find({});
     res.render('tv_shows/tv_shows', { allShows });
