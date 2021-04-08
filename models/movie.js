@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-const showSchema = new mongoose.Schema({
-    tvmazeID: {
+const movieSchema = new mongoose.Schema({
+    tmdbID: {
         type: Number,
         required: true
     },
@@ -10,15 +10,17 @@ const showSchema = new mongoose.Schema({
         required: true
     },
     genres: [{
-        type: String,
+        type: Number,
+        required: true
     }],
     poster: {
         type: String,
+        required: true
     },
-    summary: {
+    overview: {
         type: String,
         required: true
     }
-});
+})
 
-module.exports = mongoose.model('Show', showSchema);
+module.exports = mongoose.model('Movie', movieSchema);
