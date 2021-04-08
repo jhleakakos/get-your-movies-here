@@ -1,4 +1,4 @@
-h1, h2 {
+/* h1, h2 {
     text-align: center;
 }
 .tv-show-display {
@@ -13,4 +13,16 @@ h1, h2 {
     margin: 5px 1.66%;
     padding: 3px;
     width: 25%;
+} */
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px
 }
+
+/*
+.card-text {
+    height: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */

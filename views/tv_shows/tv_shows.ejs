@@ -1,11 +1,11 @@
 <% layout('layout') %>
 <h1>Look At All These Great TV Shows</h1>
 
-<h2>Look at some of the hit TV shows you can rent tonight</h2>
+<h2 class="mb-5">Look at some of the hit TV shows you can rent tonight</h2>
 <div class="container">
     <div class="row">
         <% for (let show of allShows) { %>
-        <div class="col-3 card">
+        <div class="col-3 card mb-5">
             <img src="<%= show.poster %>">
             <div class="card-body">
                 <div class="card-title">
@@ -18,7 +18,7 @@
                     <li class="list-group-item"><%= genre %></li>
                 <% } %>
                 </ul>
-                <a href="/shows/<%= show._id %>" class="btn btn-primary mt-5">See Details</a>
+                <a href="/shows/<%= show._id %>" class="btn btn-primary mt-5 stretched-link">See Details</a>
             </div>
         </div>
         <% } %>
