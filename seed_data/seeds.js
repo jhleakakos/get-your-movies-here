@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
-const Show = require('../../models/show');
-const Movie = require('../../models/movie');
+const Show = require('../models/show');
+const Movie = require('../models/movie');
+const MovieGenre = require('../models/movieGenre');
 const showData = require('./seed_shows');
-const movieData = require('./seeds_movies.json');
+const movieData = require('./seed_movies.json');
+const movieGenreData = require('./movie_genres.json');
+const movieGenre = require('../models/movieGenre');
 
 // mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
 //     useNewUrlParser: true,
@@ -34,12 +37,25 @@ const seedShows = async () => {
     }
 }
 
-const seedMovies = () => {
-    // await seedMovies.deleteMany();
+const seedMovieGenres = async () => {
+    await MovieGenre.deleteMany();
+    for (let genre of movieGenreData) {
+        const newMovieGenre = new MovieGenre({
+            movieGenreID: genre.id,
+            movieGenreName: genre.name
+        })
+        await newMovieGenre.save();
+        // console.log(newMovieGenre);
+    }
+}
+
+const seedMovies = async () => {
+    await Movie.deleteMany();
     for (let movie of movieData) {
         const genreList = [];
         for (let genre of movie.genre_ids) {
-            genreList.push(genre);
+            const { movieGenreName } = await MovieGenre.findOne({ movieGenreID: genre });
+            genreList.push(movieGenreName);
         }
         const newMovie = new Movie({
             tmdbID: movie.id,
@@ -48,10 +64,11 @@ const seedMovies = () => {
             poster: 'need to look at tmdb build logic',
             overview: movie.overview
         })
-        // await newMovie.save();
-        console.log(newMovie);
+        await newMovie.save();
+        // console.log(newMovie);
     }
 }
 
 // seedShows().then(() => mongoose.connection.close());
-seedMovies();
+// seedMovieGenres().then(() => mongoose.connection.close());
+// seedMovies().then(() => mongoose.connection.close());

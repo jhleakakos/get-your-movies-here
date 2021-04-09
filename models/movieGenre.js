@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 const movieGenreSchema = new mongoose.Schema({
-    movieGenreID = {
+    movieGenreID: {
         type: Number,
         required: true
     },
-    movieGenreName = {
-        type = String,
+    movieGenreName: {
+        type: String,
         required: true
     }
 })
