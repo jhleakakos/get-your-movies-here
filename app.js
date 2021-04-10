@@ -3,9 +3,11 @@ const app = express();
 require('dotenv').config();
 const path = require('path');
 const ejs = require('ejs');
+const ejsMate = require('ejs-mate');
 const mongoose = require('mongoose');
 const Show = require('./models/show');
-const ejsMate = require('ejs-mate');
+const Movie = require('./models/movie');
+const MovieGenre = require('./models/movieGenre');
 
 app.listen(3000, () => console.log('express listening on port 3000'));
 app.engine('ejs', ejsMate);

@@ -57,11 +57,23 @@ const seedMovies = async () => {
             const { movieGenreName } = await MovieGenre.findOne({ movieGenreID: genre });
             genreList.push(movieGenreName);
         }
+
+        //these two are used to bulid the image url
+        //uncomment the photo size you need
+        const baseUrl = 'https://image.tmdb.org/t/p/';
+        // const size = 'w92';
+        // const size = 'w154';
+        // const size = 'w185';
+        // const size = 'w342';
+        const size = 'w500';
+        // const size = 'w780';
+        // const size = 'original';
+
         const newMovie = new Movie({
             tmdbID: movie.id,
             name: movie.original_title,
             genres: genreList,
-            poster: 'need to look at tmdb build logic',
+            poster: baseUrl.concat(size, movie.poster_path),
             overview: movie.overview
         })
         await newMovie.save();
