@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const path = require('path');
+
 const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
+
 const mongoose = require('mongoose');
 const Show = require('./models/show');
 const Movie = require('./models/movie');
