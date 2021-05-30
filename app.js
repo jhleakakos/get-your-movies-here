@@ -34,24 +34,7 @@ app.get('/about', (req, res) => {
     res.render('about');
 })
 
-app.get('/movies', async (req, res) => {
-    const allMovies = await Movie.find();
-    res.render('movies/movies', { allMovies });
-})
-
-app.get('/movies/:id', async (req, res) => {
-    const { id } = req.params;
-    const movie = await Movie.findById(id);
-    res.render('movies/movie', { movie });
-})
-
-app.get('/shows', async (req, res) => {
-    const allShows = await Show.find();
-    res.render('tv_shows/tv_shows', { allShows });
-})
-
-app.get('/shows/:id', async (req, res) => {
-    const { id } = req.params;
-    const show = await Show.findById(id);
-    res.render('tv_shows/show', { show });
-})
+const movieController = require('./routes/movies');
+const showController = require('./routes/shows');
+app.use('/movies', movieController);
+app.use('/shows', showController);
