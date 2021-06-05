@@ -1,14 +1,14 @@
 <% layout('layout') %>
 <h1>Want to rent <%= show.name %></h1>
-    <div>
-        <a href="/shows/<%= show._id %>/edit" class="btn btn-primary">Update</a>
-        <a href="" class="btn btn-danger">Delete</a>
-    </div>
+<div>
+    <a href="/shows/<%= show._id %>/edit" class="btn btn-primary">Update</a>
+    <a href="" class="btn btn-danger">Delete</a>
+</div>
 
 <div class="container mt-5">
     <div class="row">
         <div class=col-3>
-            <img src="<%= show.poster %>">
+            <img class="img-fluid" src="<%= show.poster %>">
             <h4>Genres</h4>
             <ul>
             <% for (let genre of show.genres) { %>

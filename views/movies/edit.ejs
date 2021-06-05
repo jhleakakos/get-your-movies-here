@@ -1,0 +1,30 @@
+<% layout('layout') %>
+<h1>Update <%= movie.name %></h1>
+
+<div class="container mt-5">
+    <form action="" method="">
+        <div class="mb-3">
+            <label class="form-label" for="name">Movie Name</label>
+            <input class="form-control" type="text" id="name" name="name" value="<%= movie.name %>" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="poster">Poster URL</label>
+            <input class="form-control" type="text" id="poster" name="poster" value="<%= movie.poster %>" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="overview">Overview</label>
+            <textarea class="form-control" id="overview" name="overview"required><%= movie.overview %></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="genres">Genres</label>
+            <input class="form-control" type="text" id="genres" name="genres" value="<%= movie.genres %>" required>
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-primary">Update TV Show</button>
+        </div>
+    </form>
+</div>

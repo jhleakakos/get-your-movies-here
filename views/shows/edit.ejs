@@ -9,13 +9,13 @@
         </div>
 
         <div class="mb-3">
-            <label class="form-label" for="poster-url">Poster URL</label>
+            <label class="form-label" for="poster">Poster URL</label>
             <input class="form-control" type="text" id="poster" name="poster" value="<%= show.poster %>" required>
         </div>
 
         <div class="mb-3">
             <label class="form-label" for="summary">Summary</label>
-            <input class="form-control" type="text" id="summary" name="summary" value="<%= show.summary %>" required>
+            <textarea class="form-control" id="summary" name="summary"required><%= show.summary %></textarea>
         </div>
 
         <div class="mb-3">
