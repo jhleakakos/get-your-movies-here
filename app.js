@@ -18,11 +18,13 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'));
+app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useFindAndModify: false
 })
     .then(() => console.log('mongodb connection open on port 27017'))
     .catch(e => console.log(e));

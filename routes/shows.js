@@ -19,4 +19,12 @@ router.get('/:id/edit', async (req, res) => {
     res.render('shows/edit', { show });
 })
 
+router.patch('/:id', async (req, res) => {
+    const { id } = req.params;
+    const showUpdate = req.body;
+    showUpdate.genres = req.body.genres.split(',');
+    const show = await Show.findByIdAndUpdate(id, showUpdate);
+    res.redirect(`/shows/${show._id}`);
+})
+
 module.exports = router;

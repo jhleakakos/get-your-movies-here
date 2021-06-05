@@ -2,7 +2,7 @@
 <h1>Update <%= show.name %></h1>
 
 <div class="container mt-5">
-    <form action="" method="">
+    <form action="/shows/<%= show._id %>?_method=PATCH" method="POST">
         <div class="mb-3">
             <label class="form-label" for="name">TV Show Name</label>
             <input class="form-control" type="text" id="name" name="name" value="<%= show.name %>" required>
