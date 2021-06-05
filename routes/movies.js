@@ -19,4 +19,12 @@ router.get('/:id/edit', async (req, res) => {
     res.render('movies/edit', { movie });
 })
 
+router.patch('/:id', async (req, res) => {
+    const { id } = req.params;
+    const movieUpdate = req.body;
+    movieUpdate.genres = req.body.genres.split(',');
+    const movie = await Movie.findByIdAndUpdate(id, movieUpdate);
+    res.redirect(`/movies/${movie._id}`);
+})
+
 module.exports = router;
