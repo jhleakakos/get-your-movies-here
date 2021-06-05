@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const path = require('path');
+const methodOverride = require('method-override');
 
 const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
@@ -16,6 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
+app.use(methodOverride('_method'));
 
 mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     useNewUrlParser: true,

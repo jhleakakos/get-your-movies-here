@@ -4,15 +4,16 @@ GET     /                 landing page
 
 GET     /movies           get main page listing of movies
 GET     /movies/:id       show page for individual movie
+POST    /movies/:id/comment
+DELETE  /movies/:id/comment
 
 GET     /shows            get main page listing of tv shows
 GET     /shows/:id        show page for individual tv show
+POST    /shows/:id/comment
+DELETE  /shows/:id/comment
 
-POST    /review           add review
-DELETE  /review           delete review
-
-POST    /comment          add comment
-DELETE  /comment          delete comment
+POST    /review
+DELETE  /review
 
 GET     /login            login page
 GET     /logout           log out user

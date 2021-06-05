@@ -13,4 +13,10 @@ router.get('/:id', async (req, res) => {
     res.render('shows/show', { show });
 })
 
+router.get('/:id/edit', async (req, res) => {
+    const { id } = req.params;
+    const show = await Show.findById(id);
+    res.render('shows/edit', { show });
+})
+
 module.exports = router;
