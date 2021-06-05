@@ -27,4 +27,9 @@ router.patch('/:id', async (req, res) => {
     res.redirect(`/shows/${show._id}`);
 })
 
+router.delete('/:id', async (req, res) => {
+    await Show.findByIdAndDelete(req.params.id);
+    res.redirect('/shows');
+})
+
 module.exports = router;

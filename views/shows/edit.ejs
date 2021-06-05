@@ -26,7 +26,9 @@
         <div class="mb-3">
             <button class="btn btn-primary">Update</button>
             <a class="btn btn-secondary" href="/shows/<%= show._id %>">Cancel</a>
-            <a class="btn btn-danger" href="/shows/<%= show._id %>">Delete</a>
         </div>
+    </form>
+    <form action="/shows/<%= show._id %>?_method=DELETE" method="POST">
+        <button class="btn btn-danger">Delete</button>
     </form>
 </div>
