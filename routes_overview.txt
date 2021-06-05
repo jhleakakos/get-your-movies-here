@@ -4,11 +4,17 @@ GET     /                 landing page
 
 GET     /movies           get main page listing of movies
 GET     /movies/:id       show page for individual movie
+PATCH   /movies/:id       edit movie
+GET     /movies/:id/edit  form to edit to movie
+DELETE  /movies/:id       delete movie
 POST    /movies/:id/comment
 DELETE  /movies/:id/comment
 
 GET     /shows            get main page listing of tv shows
 GET     /shows/:id        show page for individual tv show
+PATCH   /shows/:id        edit show
+GET     /shows/:id/edit   form to edit tv show
+DELETE  /shows/:id        delete show
 POST    /shows/:id/comment
 DELETE  /shows/:id/comment
 
@@ -28,11 +34,5 @@ GET     /user/:id/edit    form to edit user
 GET     /admin            admin page
 POST    /movies           add movie
 GET     /movies/new       form to add a new movie
-PATCH   /movies/:id       edit movie
-GET     /movies/:id/edit  form to edit to movie
-DELETE  /movies/:id       delete movie
 POST    /shows            add tv show
 GET     /shows/new        form to add new tv show
-PATCH   /shows/:id        edit show
-GET     /shows/:id/edit   form to edit tv show
-DELETE  /shows/:id        delete show
