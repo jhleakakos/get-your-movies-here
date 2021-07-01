@@ -7,6 +7,10 @@ router.get('/', async (req, res) => {
     res.render('movies/movies', { allMovies });
 })
 
+router.get('/new', (req, res) => {
+    res.render('movies/new');
+})
+
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
     const movie = await Movie.findById(id);
@@ -31,5 +35,6 @@ router.delete('/:id', async (req, res) => {
     await Movie.findByIdAndDelete(req.params.id);
     res.redirect('/movies');
 })
+
 
 module.exports = router;
