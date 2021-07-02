@@ -4,9 +4,9 @@ const btn = document.querySelector('#searchBtn');
 
 console.log('script loaded');
 
-btn.addEventListener('click', (e) => {
+btn.addEventListener('click', async (e) => {
     e.preventDefault();
-    const res = search.value;
+    const res = await getShows(search.value);
     search.value = '';
 
     const li = document.createElement('li');
@@ -15,3 +15,10 @@ btn.addEventListener('click', (e) => {
 
     console.log(res);
 });
+
+const getShows = async (searchTerm) => {
+    const results = await fetch(`http://api.tvmaze.com/search/shows?q=${searchTerm}`);
+    const json = await results.json();
+    console.log(json);
+    return json;
+}
