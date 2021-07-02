@@ -1,0 +1,16 @@
+<% layout('layout') %>
+<h1>Add a TV Show</h1>
+
+<div class="container mt-5 col-4">
+    <form>
+        <label class="form-label" for="search">TV Show Name</label>
+        <input class="form-control" type="text" id="search" name="search">
+        <button class="btn btn-primary mt-2" id="searchBtn">Search</button>
+    </form>
+</div>
+
+<div class="container">
+    <ul id="results"></ul>
+</div>
+
+<script src="/js/showSearch.js"></script>

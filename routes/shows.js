@@ -7,6 +7,10 @@ router.get('/', async (req, res) => {
     res.render('shows/shows', { allShows });
 })
 
+router.get('/new', (req, res) => {
+    res.render('shows/new');
+})
+
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
     const show = await Show.findById(id);
