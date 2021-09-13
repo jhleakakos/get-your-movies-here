@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Movie = require('../models/movie');
+const Review = require('../models/review');
 
 router.get('/', async (req, res) => {
     const allMovies = await Movie.find();
@@ -21,6 +22,16 @@ router.get('/:id/edit', async (req, res) => {
     const { id } = req.params;
     const movie = await Movie.findById(id);
     res.render('movies/edit', { movie });
+})
+
+router.post('/:id/review', async (req, res) => {
+    const { id } = req.params;
+    const movie = await Movie.findById(id);
+    const review = new Review(req.body);
+    movie.reviews.push(review);
+    await review.save();
+    await movie.save();
+    res.redirect(`/movies/${movie._id}`);
 })
 
 router.patch('/:id', async (req, res) => {

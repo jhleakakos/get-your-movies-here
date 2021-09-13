@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Show = require('../models/show');
+const Review = require('../models/review');
 
 router.get('/', async (req, res) => {
     const allShows = await Show.find();
@@ -21,6 +22,16 @@ router.get('/:id/edit', async (req, res) => {
     const { id } = req.params;
     const show = await Show.findById(id);
     res.render('shows/edit', { show });
+})
+
+router.post('/:id/review', async (req, res) => {
+    const { id } = req.params;
+    const show = await Show.findById(id);
+    const review = new Review(req.body);
+    show.reviews.push(review);
+    await review.save();
+    await show.save();
+    res.redirect(`/shows/${show._id}`);
 })
 
 router.patch('/:id', async (req, res) => {
