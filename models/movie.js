@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const movieSchema = new mongoose.Schema({
+const movieSchema = new Schema({
     tmdbID: {
         type: Number,
         required: true
@@ -18,7 +19,11 @@ const movieSchema = new mongoose.Schema({
     },
     overview: {
         type: String,
-    }
+    },
+    reviews: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Review'
+    }]
 })
 
 module.exports = mongoose.model('Movie', movieSchema);
