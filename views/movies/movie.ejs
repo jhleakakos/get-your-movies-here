@@ -35,5 +35,21 @@
                 <li>Sample Comment</li>
             </ul>
         </div>
+        <div class="col-6">
+            <h3>Leave a review for <%= movie.name %></h3>
+            <form action="/movies/<%= movie._id  %>/review" method="POST" class="mb-3">
+                <div class="mb-3">
+                    <div class="col-4">
+                        <label class="form-label" for="rating">Rating</label>
+                        <input class="form-range" id="rating" type="range" min="1" max="5">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="body">Review</label>
+                    <textarea class="form-control" name="body" id="body" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn btn-success">Submit Review</button>
+            </form>
+        </div>
     </div>
 </div>
