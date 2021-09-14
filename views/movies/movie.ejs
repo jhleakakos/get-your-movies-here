@@ -31,6 +31,9 @@
                     </div>
                     <p class="card-text"><%= review.body %></p>
                 </div>
+                <form action="/movies/<%= movie._id %>/review/<%= review._id %>?_method=DELETE" method="POST">
+                    <button class="btn btn-sm btn-danger">Delete Review</button>
+                </form>
             </div>
             <% } %>
         </div>
