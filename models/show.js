@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const Review = require('./review');
 
 const showSchema = new Schema({
     tvmazeID: {
@@ -24,6 +25,12 @@ const showSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Review'
     }]
+});
+
+showSchema.post('findOneAndDelete', async (doc) => {
+    if (doc) {
+        await Review.deleteMany({ _id: { $in: doc.reviews }});
+    }
 });
 
 module.exports = mongoose.model('Show', showSchema);

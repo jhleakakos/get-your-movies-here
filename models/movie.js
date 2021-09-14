@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const Review = require('./review');
 
 const movieSchema = new Schema({
     tmdbID: {
@@ -25,5 +26,11 @@ const movieSchema = new Schema({
         ref: 'Review'
     }]
 })
+
+movieSchema.post('findOneAndDelete', async (doc) => {
+    if (doc) {
+        await Review.deleteMany({ _id: { $in: doc.reviews }});
+    }
+});
 
 module.exports = mongoose.model('Movie', movieSchema);
