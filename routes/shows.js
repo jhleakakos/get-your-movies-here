@@ -34,6 +34,13 @@ router.post('/:id/review', async (req, res) => {
     res.redirect(`/shows/${show._id}`);
 })
 
+router.delete('/:id/review/:reviewId', async (req, res) => {
+    const { id, reviewId } = req.params;
+    const show = await Show.findByIdAndUpdate(id, {$pull: { reviews: reviewId }});
+    await Review.findByIdAndDelete(reviewId);
+    res.redirect(`/shows/${show._id}`);
+})
+
 router.patch('/:id', async (req, res) => {
     const { id } = req.params;
     const showUpdate = req.body;
