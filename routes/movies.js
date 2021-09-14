@@ -14,7 +14,7 @@ router.get('/new', (req, res) => {
 
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
-    const movie = await Movie.findById(id);
+    const movie = await Movie.findById(id).populate('reviews');
     res.render('movies/movie', { movie });
 })
 
