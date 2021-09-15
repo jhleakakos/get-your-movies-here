@@ -7,6 +7,9 @@ const methodOverride = require('method-override');
 const ejs = require('ejs');
 const ejsMate = require('ejs-mate');
 
+const session = require('express-session');
+const flash = require('connect-flash');
+
 const mongoose = require('mongoose');
 const Show = require('./models/show');
 const Movie = require('./models/movie');
@@ -19,6 +22,25 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
+
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        httpOnly: true,
+        expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 60 * 60 * 24 * 7,
+        sameSite: true
+    }
+}));
+app.use(flash());
+app.use((req, res, next) => {
+    res.locals.deleteShow = req.flash('deleteShow');
+    res.locals.deleteMovie = req.flash('deleteMovie');
+    res.locals.deleteReview = req.flash('deleteReview');
+    next();
+});
 
 mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     useNewUrlParser: true,

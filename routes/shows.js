@@ -38,6 +38,7 @@ router.delete('/:id/review/:reviewId', async (req, res) => {
     const { id, reviewId } = req.params;
     const show = await Show.findByIdAndUpdate(id, {$pull: { reviews: reviewId }});
     await Review.findByIdAndDelete(reviewId);
+    req.flash('deleteReview', 'Successfully deleted review');
     res.redirect(`/shows/${show._id}`);
 })
 
@@ -51,6 +52,7 @@ router.patch('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     await Show.findByIdAndDelete(req.params.id);
+    req.flash('deleteShow', 'Successfully deleted show');
     res.redirect('/shows');
 })
 
