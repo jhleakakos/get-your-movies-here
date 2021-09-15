@@ -31,6 +31,7 @@ router.post('/:id/review', async (req, res) => {
     show.reviews.push(review);
     await review.save();
     await show.save();
+    req.flash('success', 'Created review');
     res.redirect(`/shows/${show._id}`);
 })
 
@@ -38,7 +39,7 @@ router.delete('/:id/review/:reviewId', async (req, res) => {
     const { id, reviewId } = req.params;
     const show = await Show.findByIdAndUpdate(id, {$pull: { reviews: reviewId }});
     await Review.findByIdAndDelete(reviewId);
-    req.flash('success', 'Successfully deleted review');
+    req.flash('success', 'Deleted review');
     res.redirect(`/shows/${show._id}`);
 })
 
@@ -47,13 +48,13 @@ router.patch('/:id', async (req, res) => {
     const showUpdate = req.body;
     showUpdate.genres = req.body.genres.split(',');
     const show = await Show.findByIdAndUpdate(id, showUpdate);
-    req.flash('success', 'Successfully updated show');
+    req.flash('success', 'Updated show');
     res.redirect(`/shows/${show._id}`);
 })
 
 router.delete('/:id', async (req, res) => {
     await Show.findByIdAndDelete(req.params.id);
-    req.flash('success', 'Successfully deleted show');
+    req.flash('success', 'Deleted show');
     res.redirect('/shows');
 })
 
