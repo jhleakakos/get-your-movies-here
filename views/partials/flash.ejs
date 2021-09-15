@@ -1,23 +1,8 @@
-<% if (deleteMovie && deleteMovie.length) { %>
+<% if (success && success.length) { %>
 <div class="alert alert-success alert-dismissible fade show" role="alert">
     
-    <%= deleteMovie %>
+    <%= success %>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <% } %>
 
-<% if (deleteShow && deleteShow.length) { %>
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    
-    <%= deleteShow %>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-<% } %>
-
-<% if (deleteReview && deleteReview.length) { %>
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    
-    <%= deleteReview %>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-<% } %>
