@@ -15,13 +15,12 @@
 - visually align items in cards
 - custom font
 
-
 # update readme
 
 - steps to run
 - intention of project
 - api info
-- use .env file for api key
+- use .env file
 - visually appealing
 - code blocks
 - port info
