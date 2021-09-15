@@ -36,8 +36,8 @@ app.use(session({
 }));
 app.use(flash());
 app.use((req, res, next) => {
-    res.locals.deleteShow = req.flash('deleteShow');
     res.locals.deleteMovie = req.flash('deleteMovie');
+    res.locals.deleteShow = req.flash('deleteShow');
     res.locals.deleteReview = req.flash('deleteReview');
     next();
 });
