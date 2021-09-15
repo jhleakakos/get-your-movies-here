@@ -17,6 +17,7 @@ const User = require('./models/user');
 const mongoose = require('mongoose');
 //const Show = require('./models/show');
 //const Movie = require('./models/movie');
+//const User = require('./models/user');
 
 app.listen(3000, () => console.log('express listening on port 3000'));
 app.engine('ejs', ejsMate);
@@ -41,6 +42,7 @@ app.use(session({
 app.use(flash());
 app.use((req, res, next) => {
     res.locals.success = req.flash('success');
+    res.locals.error = req.flash('error');
     next();
 });
 
@@ -71,5 +73,7 @@ app.get('/about', (req, res) => {
 
 const movieController = require('./routes/movies');
 const showController = require('./routes/shows');
+const userController = require('./routes/users');
 app.use('/movies', movieController);
 app.use('/shows', showController);
+app.use('/', userController);
