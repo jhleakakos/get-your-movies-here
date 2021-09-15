@@ -47,6 +47,7 @@ router.patch('/:id', async (req, res) => {
     const showUpdate = req.body;
     showUpdate.genres = req.body.genres.split(',');
     const show = await Show.findByIdAndUpdate(id, showUpdate);
+    req.flash('success', 'Successfully updated show');
     res.redirect(`/shows/${show._id}`);
 })
 

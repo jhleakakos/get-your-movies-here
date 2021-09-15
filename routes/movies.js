@@ -47,6 +47,7 @@ router.patch('/:id', async (req, res) => {
     const movieUpdate = req.body;
     movieUpdate.genres = req.body.genres.split(',');
     const movie = await Movie.findByIdAndUpdate(id, movieUpdate);
+    req.flash('success', 'Successfully updated movie');
     res.redirect(`/movies/${movie._id}`);
 })
 
