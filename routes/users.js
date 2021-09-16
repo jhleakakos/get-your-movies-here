@@ -12,7 +12,6 @@ router.post('/register', async (req, res) => {
     const user = new User({ email, username });
     try {
         const registeredUser = await User.register(user, password);
-        console.log(registeredUser);
         req.flash('success', 'Welcome to GYMH');
         res.redirect('/');
     }
@@ -28,6 +27,12 @@ router.get('/login', (req, res) => {
 
 router.post('/login', passport.authenticate('local', {failureFlash: true, failureRedirect: '/login' }), async (req, res) => {
     req.flash('success', 'Welcome back to GYMH');
+    res.redirect('/');
+});
+
+router.get('/logout', (req, res) => {
+    req.logout();
+    req.flash('success', 'Logged out. See you next time');
     res.redirect('/');
 });
 

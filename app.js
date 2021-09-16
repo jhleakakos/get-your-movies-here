@@ -40,11 +40,6 @@ app.use(session({
     }
 }));
 app.use(flash());
-app.use((req, res, next) => {
-    res.locals.success = req.flash('success');
-    res.locals.error = req.flash('error');
-    next();
-});
 
 //passport session middleware must come after express session middleware
 app.use(passport.initialize());
@@ -52,6 +47,15 @@ app.use(passport.session());
 passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+//this middleware must come after passport middleware
+//in order to set the user property
+app.use((req, res, next) => {
+    res.locals.success = req.flash('success');
+    res.locals.error = req.flash('error');
+    res.locals.user = req.user;
+    next();
+});
 
 mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     useNewUrlParser: true,
