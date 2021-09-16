@@ -15,7 +15,7 @@ router.get('/new', (req, res) => {
 
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
-    const show = await Show.findById(id).populate('reviews');
+    const show = await Show.findById(id).populate('reviews').populate('author');
     res.render('shows/show', { show });
 })
 
@@ -29,6 +29,7 @@ router.post('/:id/review', isLoggedIn, async (req, res) => {
     const { id } = req.params;
     const show = await Show.findById(id);
     const review = new Review(req.body);
+    review.author = req.user._id;
     show.reviews.push(review);
     await review.save();
     await show.save();

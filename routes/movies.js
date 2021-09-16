@@ -29,6 +29,7 @@ router.post('/:id/review', isLoggedIn, async (req, res) => {
     const { id } = req.params;
     const movie = await Movie.findById(id);
     const review = new Review(req.body);
+    review.author = req.user._id;
     movie.reviews.push(review);
     await review.save();
     await movie.save();

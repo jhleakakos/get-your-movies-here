@@ -17,7 +17,7 @@ router.post('/register', async (req, res, next) => {
         });
         req.flash('success', 'Welcome to GYMH');
         //strip /review from route since there is no get for .../review
-        if (req.session.returnURL.indexOf('/review') > 0) {
+        if (req.session.returnURL && req.session.returnURL.indexOf('/review') > 0) {
             req.session.returnURL = req.session.returnURL.slice(0, -7);
         }
         res.redirect(req.session.returnURL || '/');
@@ -35,7 +35,7 @@ router.get('/login', (req, res) => {
 router.post('/login', passport.authenticate('local', {failureFlash: true, failureRedirect: '/login' }), async (req, res) => {
     req.flash('success', 'Welcome back to GYMH');
     //strip /review from route since there is no get for .../review
-    if (req.session.returnURL.indexOf('/review') > 0) {
+    if (req.session.returnURL && req.session.returnURL.indexOf('/review') > 0) {
         req.session.returnURL = req.session.returnURL.slice(0, -7);
     }
     res.redirect(req.session.returnURL || '/');
