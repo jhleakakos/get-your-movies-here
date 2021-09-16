@@ -27,6 +27,14 @@
                     <button class="btn btn-outline-dark" type="submit">Search</button>
                 </form>
                 <ul class="navbar-nav me-5 bm-2 mb-lg-0 right">
+                    <% if (user && user.role === 'admin') { %>
+                    <li class="nav-item">
+                        <a href="/movies/new" class="nav-link">Add Movie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/shows/new" class="nav-link">Add TV Show</a>
+                    </li>
+                    <% } %>
 
                     <% if (!user) { %>
                     <li class="nav-item">
@@ -38,12 +46,6 @@
                     <% } else { %>
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/movies/new" class="nav-link">Add Movie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/shows/new" class="nav-link">Add TV Show</a>
                     </li>
                     <% } %>
 

@@ -9,6 +9,14 @@ module.exports.isLoggedIn = (req, res, next) => {
     next();
 };
 
+module.exports.isAdmin = (req, res, next) => {
+    if (!(req.user.role === 'admin')) {
+        req.flash('error', 'You do not have permission to do that');
+        return res.redirect('/');
+    }
+    next();
+};
+
 module.exports.isReviewAuthor = async (req, res, next) => {
     const { reviewId } = req.params;
     const review = await Review.findById(reviewId);
@@ -23,3 +31,4 @@ module.exports.isReviewAuthor = async (req, res, next) => {
     }
     next();
 };
+

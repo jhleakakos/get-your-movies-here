@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 const Show = require('../models/show');
 const Review = require('../models/review');
-const { isLoggedIn, isReviewAuthor } = require('../middleware');
+const { isLoggedIn, isAdmin, isReviewAuthor } = require('../middleware');
 
 router.get('/', async (req, res) => {
     const allShows = await Show.find();
     res.render('shows/shows', { allShows });
 })
 
-router.get('/new', (req, res) => {
+router.get('/new', isLoggedIn, isAdmin, (req, res) => {
     res.render('shows/new');
 })
 

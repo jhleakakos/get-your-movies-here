@@ -50,7 +50,7 @@ passport.deserializeUser(User.deserializeUser());
 
 //this middleware must come after passport middleware
 //in order to set the user property
-app.use((req, res, next) => {
+app.use(async (req, res, next) => {
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     res.locals.user = req.user;
