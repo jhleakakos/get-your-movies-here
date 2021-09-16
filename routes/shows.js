@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Show = require('../models/show');
 const Review = require('../models/review');
-const { isLoggedIn } = require('../middleware');
+const { isLoggedIn, isReviewAuthor } = require('../middleware');
 
 router.get('/', async (req, res) => {
     const allShows = await Show.find();
@@ -42,7 +42,7 @@ router.post('/:id/review', isLoggedIn, async (req, res) => {
     res.redirect(`/shows/${show._id}`);
 })
 
-router.delete('/:id/review/:reviewId', isLoggedIn, async (req, res) => {
+router.delete('/:id/review/:reviewId', isLoggedIn, isReviewAuthor, async (req, res) => {
     const { id, reviewId } = req.params;
     const show = await Show.findByIdAndUpdate(id, {$pull: { reviews: reviewId }});
     await Review.findByIdAndDelete(reviewId);
