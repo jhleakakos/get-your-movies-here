@@ -7,13 +7,20 @@ router.get('/register', (req, res) => {
     res.render('users/register');
 });
 
-router.post('/register', async (req, res) => {
+router.post('/register', async (req, res, next) => {
     const { email, username, password } = req.body;
     const user = new User({ email, username });
     try {
         const registeredUser = await User.register(user, password);
+        req.login(registeredUser, err => {
+            if (err) return next(err);
+        });
         req.flash('success', 'Welcome to GYMH');
-        res.redirect('/');
+        //strip /review from route since there is no get for .../review
+        if (req.session.returnURL.indexOf('/review') > 0) {
+            req.session.returnURL = req.session.returnURL.slice(0, -7);
+        }
+        res.redirect(req.session.returnURL || '/');
     }
     catch(e) {
         req.flash('error', e.message);
@@ -27,7 +34,11 @@ router.get('/login', (req, res) => {
 
 router.post('/login', passport.authenticate('local', {failureFlash: true, failureRedirect: '/login' }), async (req, res) => {
     req.flash('success', 'Welcome back to GYMH');
-    res.redirect('/');
+    //strip /review from route since there is no get for .../review
+    if (req.session.returnURL.indexOf('/review') > 0) {
+        req.session.returnURL = req.session.returnURL.slice(0, -7);
+    }
+    res.redirect(req.session.returnURL || '/');
 });
 
 router.get('/logout', (req, res) => {
