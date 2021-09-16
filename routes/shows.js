@@ -15,7 +15,12 @@ router.get('/new', (req, res) => {
 
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
-    const show = await Show.findById(id).populate('reviews').populate('author');
+    //syntax to 'populate across multiple levels'
+    //(mongoose doc terminology)
+    const show = await Show.findById(id).populate({
+        path: 'reviews',
+        populate: { path: 'author' }
+    });
     res.render('shows/show', { show });
 })
 
