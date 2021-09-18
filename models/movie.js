@@ -24,7 +24,12 @@ const movieSchema = new Schema({
     reviews: [{
         type: Schema.Types.ObjectId,
         ref: 'Review'
-    }]
+    }],
+    inventory: {
+        type: Number,
+        min: 0,
+        required: true
+    }
 })
 
 movieSchema.post('findOneAndDelete', async (doc) => {

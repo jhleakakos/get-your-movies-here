@@ -30,7 +30,8 @@ const seedShows = async () => {
                 (show.show.image.medium !== null ? show.show.image.medium :
                     (show.show.image.original !== null ?
                         show.show.image.original : null))),
-            summary: show.show.summary || 'needs a description'
+            summary: show.show.summary || 'needs a description',
+            inventory: Math.floor(Math.random() * 6)
         });
         await newShow.save();
         // console.log(newShow);
@@ -74,7 +75,8 @@ const seedMovies = async () => {
             name: movie.original_title,
             genres: genreList,
             poster: baseUrl.concat(size, movie.poster_path),
-            overview: movie.overview
+            overview: movie.overview,
+            inventory: Math.floor(Math.random() * 6)
         })
         await newMovie.save();
         // console.log(newMovie);
