@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
     res.render('shows/show', { show });
 })
 
-router.get('/:id/edit', isLoggedIn, async (req, res) => {
+router.get('/:id/edit', isLoggedIn, isAdmin, async (req, res) => {
     const { id } = req.params;
     const show = await Show.findById(id);
     res.render('shows/edit', { show });
@@ -50,7 +50,7 @@ router.delete('/:id/review/:reviewId', isLoggedIn, isReviewAuthor, async (req, r
     res.redirect(`/shows/${show._id}`);
 })
 
-router.patch('/:id', isLoggedIn, async (req, res) => {
+router.patch('/:id', isLoggedIn, isAdmin, async (req, res) => {
     const { id } = req.params;
     const showUpdate = req.body;
     showUpdate.genres = req.body.genres.split(',');
@@ -59,7 +59,7 @@ router.patch('/:id', isLoggedIn, async (req, res) => {
     res.redirect(`/shows/${show._id}`);
 })
 
-router.delete('/:id', isLoggedIn, async (req, res) => {
+router.delete('/:id', isLoggedIn, isAdmin, async (req, res) => {
     await Show.findByIdAndDelete(req.params.id);
     req.flash('success', 'Deleted show');
     res.redirect('/shows');

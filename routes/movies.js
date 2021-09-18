@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
     res.render('movies/movie', { movie });
 })
 
-router.get('/:id/edit', isLoggedIn, async (req, res) => {
+router.get('/:id/edit', isLoggedIn, isAdmin, async (req, res) => {
     const { id } = req.params;
     const movie = await Movie.findById(id);
     res.render('movies/edit', { movie });
@@ -50,7 +50,7 @@ router.delete('/:id/review/:reviewId', isLoggedIn, isReviewAuthor, async (req, r
     res.redirect(`/movies/${movie._id}`);
 })
 
-router.patch('/:id', isLoggedIn, async (req, res) => {
+router.patch('/:id', isLoggedIn, isAdmin, async (req, res) => {
     const { id } = req.params;
     const movieUpdate = req.body;
     movieUpdate.genres = req.body.genres.split(',');
@@ -59,7 +59,7 @@ router.patch('/:id', isLoggedIn, async (req, res) => {
     res.redirect(`/movies/${movie._id}`);
 })
 
-router.delete('/:id', isLoggedIn, async (req, res) => {
+router.delete('/:id', isLoggedIn, isAdmin, async (req, res) => {
     await Movie.findByIdAndDelete(req.params.id);
     req.flash('success', 'Deleted movie');
     res.redirect('/movies');

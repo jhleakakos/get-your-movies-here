@@ -1,11 +1,14 @@
 <% layout('layout') %>
 <h1>Want to rent <%= show.name %></h1>
+
+<% if (user && user.role === 'admin') { %>
 <div class="d-flex">
     <a href="/shows/<%= show._id %>/edit" class="btn btn-primary d-inline me-1">Update</a>
     <form action="/shows/<%= show._id %>?_method=DELETE" method="POST" class="d-inline">
         <button class="btn btn-danger">Delete</button>
     </form>
 </div>
+<% } %>
 
 <div class="container mt-5">
     <div class="row">
