@@ -2,22 +2,31 @@ const search = document.querySelector('#search');
 const list = document.querySelector('#results');
 const searchBtn = document.querySelector('#searchBtn');
 const clearBtn = document.querySelector('#clearBtn');
-
-clearBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    list.innerHTML = '';
-});
+const clearSearchBtn = document.querySelector('#clearSearchBtn');
 
 searchBtn.addEventListener('click', async (e) => {
     e.preventDefault();
+    await getResults();
+});
+
+clearBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    clearResults();
+});
+
+clearSearchBtn.addEventListener('click', async (e) => {
+    e.preventDefault();
+    clearResults();
+    await getResults();
+});
+
+const clearResults = () => {
+    list.innerHTML = '';
+};
+
+const getResults =  async (e) => {
     const res = await getShows(search.value);
     search.value = '';
-
-//    for (let item of res) {
-//        const li = document.createElement('li');
-//        li.innerText = item.show.name;
-//        list.append(li);
-//    }
 
     for (let item of res) {
         let genres = '';
@@ -27,7 +36,7 @@ searchBtn.addEventListener('click', async (e) => {
         const card = `<div class="col-3 card mb-5">
                         <div class="show-poster">
                             <img src="${
-                                (item.show.image === null ? null :
+                                (item.show.image === null ? '#' :
                                 (item.show.image.medium !== null ? item.show.image.medium :
                                 (item.show.image.original !== null ?
                                 item.show.image.original : null)))
@@ -46,7 +55,7 @@ searchBtn.addEventListener('click', async (e) => {
                     </div>`
         list.innerHTML += card;
     }
-});
+};
 
 const getShows = async (searchTerm) => {
     const results = await fetch(`http://api.tvmaze.com/search/shows?q=${searchTerm}`);
