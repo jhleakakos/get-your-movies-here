@@ -24,11 +24,12 @@ const clearResults = () => {
     list.innerHTML = '';
 };
 
-const getResults =  async (e) => {
-    const res = await getShows(search.value);
+const getResults = async () => {
+    const results = await fetch(`/shows/new/${search.value}`);
+    const json = await results.json();
     search.value = '';
 
-    for (let item of res) {
+    for (let item of json) {
         let genres = '';
         for (let genre of item.show.genres) {
             genres += `<li class="list-group-item">${genre}</li>`; 
@@ -56,9 +57,3 @@ const getResults =  async (e) => {
         list.innerHTML += card;
     }
 };
-
-const getShows = async (searchTerm) => {
-    const results = await fetch(`http://api.tvmaze.com/search/shows?q=${searchTerm}`);
-    const json = await results.json();
-    return json;
-}

@@ -3,14 +3,22 @@ const router = express.Router();
 const Show = require('../models/show');
 const Review = require('../models/review');
 const { isLoggedIn, isAdmin, isReviewAuthor } = require('../middleware');
+const fetch = require('node-fetch');
 
 router.get('/', async (req, res) => {
     const allShows = await Show.find();
     res.render('shows/shows', { allShows });
 })
 
-router.get('/new', isLoggedIn, isAdmin, (req, res) => {
+router.get('/new', (req, res) => {
     res.render('shows/new');
+})
+
+router.get('/new/:search', async (req, res) => {
+    const { search } = req.params;
+    const results = await fetch(`http://api.tvmaze.com/search/shows?q=${search}`);
+    const json = await results.json();
+    res.json(json);
 })
 
 router.get('/:id', async (req, res) => {
