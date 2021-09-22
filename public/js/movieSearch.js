@@ -1,17 +1,56 @@
 const search = document.querySelector('#search');
 const list = document.querySelector('#results');
-const btn = document.querySelector('#searchBtn');
+const searchBtn = document.querySelector('#searchBtn');
+const clearBtn = document.querySelector('#clearBtn');
+const clearSearchBtn = document.querySelector('#clearSearchBtn');
 
-console.log('script loaded');
 
-btn.addEventListener('click', (e) => {
+searchBtn.addEventListener('click', async (e) => {
     e.preventDefault();
-    const res = search.value;
+    await getResults();
+});
+
+clearBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    clearResults();
+});
+
+clearSearchBtn.addEventListener('click', async (e) => {
+    e.preventDefault();
+    clearResults();
+    await getResults();
+});
+
+const clearResults = () => {
+    list.innerHTML = '';
+};
+
+const getResults = async () => {
+    const results = await fetch(`/movies/new/${search.value}`);
+    const json = await results.json();
     search.value = '';
 
-    const li = document.createElement('li');
-    li.innerText = res;
-    list.append(li);
+    const baseUrl = 'https://image.tmdb.org/t/p/';
+    const size = 'w500';
 
-    console.log(res);
-});
+    for (let item of json.results) {
+        let genres = '';
+        for (let genre of item.genreNames) {
+            genres += `<li class="list-group-item">${genre.movieGenreName}</li>`; 
+        }
+        const card = `<div class="col-3 card mb-5">
+                        <img src="${baseUrl.concat(size, item.poster_path)}">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>${item.original_title}</h3>
+                            </div>
+                            <p class="card-text">${item.overview}</p>
+                            <h4>Genres</h4>
+                            <ul class="list-group list-group-flush">
+                                ${genres}
+                            </ul>
+                        </div>
+                    </div>`
+        list.innerHTML += card;
+    }
+};

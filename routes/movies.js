@@ -2,15 +2,32 @@ const express = require('express');
 const router = express.Router();
 const Movie = require('../models/movie');
 const Review = require('../models/review');
+const MovieGenre = require('../models/movieGenre');
 const { isLoggedIn, isAdmin, isReviewAuthor } = require('../middleware');
+const fetch = require('node-fetch');
 
 router.get('/', async (req, res) => {
     const allMovies = await Movie.find();
     res.render('movies/movies', { allMovies });
 })
 
-router.get('/new', isLoggedIn, isAdmin, (req, res) => {
+router.get('/new', (req, res) => {
     res.render('movies/new');
+})
+
+router.get('/new/:search', async (req, res) => {
+    const { search } = req.params;
+    const results = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${search}`);
+    const json = await results.json();
+
+    for (let item of json.results) {
+        item.genreNames = [];
+        for (let id of item.genre_ids) {
+            item.genreNames.push(await MovieGenre.findOne({ movieGenreID: id }, 'movieGenreName'));
+        }
+    }
+
+    res.json(json);
 })
 
 router.get('/:id', async (req, res) => {
