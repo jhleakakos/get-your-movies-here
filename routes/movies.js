@@ -11,11 +11,11 @@ router.get('/', async (req, res) => {
     res.render('movies/movies', { allMovies });
 })
 
-router.get('/new', (req, res) => {
+router.get('/new', isLoggedIn, isAdmin, (req, res) => {
     res.render('movies/new');
 })
 
-router.get('/new/:search', async (req, res) => {
+router.get('/new/:search', isLoggedIn, isAdmin, async (req, res) => {
     const { search } = req.params;
     const results = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${search}`);
     const json = await results.json();

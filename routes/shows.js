@@ -10,11 +10,11 @@ router.get('/', async (req, res) => {
     res.render('shows/shows', { allShows });
 })
 
-router.get('/new', (req, res) => {
+router.get('/new', isLoggedIn, isAdmin, (req, res) => {
     res.render('shows/new');
 })
 
-router.get('/new/:search', async (req, res) => {
+router.get('/new/:search', isLoggedIn, isAdmin, async (req, res) => {
     const { search } = req.params;
     const results = await fetch(`http://api.tvmaze.com/search/shows?q=${search}`);
     const json = await results.json();
