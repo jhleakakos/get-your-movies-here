@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Show = require('../models/show');
 const Review = require('../models/review');
+const User = require('../models/user');
 const { isLoggedIn, isAdmin, isReviewAuthor } = require('../middleware');
 const fetch = require('node-fetch');
 
@@ -30,6 +31,40 @@ router.get('/:id', async (req, res) => {
         populate: { path: 'author' }
     });
     res.render('shows/show', { show });
+})
+
+router.post('/:id/rent', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const show = await Show.findById(id);
+    const user = await User.findById(req.user._id);
+    show.inventory--;
+    show.renters.push(user);
+    user.showRentals.push(show);
+    await show.save();
+    await user.save();
+
+    req.flash('success', `Rented ${show.name}`);
+    res.redirect(`/shows/${show._id}`);
+})
+
+router.post('/:id/return', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const show = await Show.findById(id);
+    const user = await User.findById(req.user._id);
+
+    const userIdx = show.renters.indexOf(user._id);
+    if (userIdx !== -1) {
+        show.inventory++;
+        show.renters.splice(userIdx, 1);
+        user.showRentals.splice(user.showRentals.indexOf(show), 1);
+
+        await show.save();
+        await user.save();
+
+        req.flash('success', `Returned ${show.name}`);
+    }
+
+    res.redirect(`/shows/${show._id}`);
 })
 
 router.get('/:id/edit', isLoggedIn, isAdmin, async (req, res) => {

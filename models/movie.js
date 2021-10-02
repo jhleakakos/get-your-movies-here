@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const Review = require('./review');
+const User = require('./user');
 
 const movieSchema = new Schema({
     tmdbID: {
@@ -28,8 +29,13 @@ const movieSchema = new Schema({
     inventory: {
         type: Number,
         min: 0,
+        max: 5,
         required: true
-    }
+    },
+    renters: [{
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    }]
 })
 
 movieSchema.post('findOneAndDelete', async (doc) => {

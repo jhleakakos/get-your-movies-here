@@ -15,6 +15,21 @@
         <div class=col-3>
             <img class="img-fluid" src="<%= show.poster %>">
             <h3><%= show.inventory %> in stock</h3>
+            <div class="d-flex justify-content-around">
+
+                <% if (user && show.inventory > 0 && !(show.renters.includes(user._id))) { %>
+                <form action="/shows/<%= show._id %>/rent" method="POST" class="d-inline mt-1">
+                <button class="btn btn-primary">Rent <%= show.name %> Now</button>
+                <% } %>
+
+                <% if (user && show.inventory <= 5 && show.renters.includes(user._id)) { %>
+                <form action="/shows/<%= show._id %>/return" method="POST" class="d-inline mt-1">
+                <button class="btn btn-danger">Return</button>
+                </form>
+                <% } %>
+
+            </div>
+
             <h4>Genres</h4>
             <ul>
             <% for (let genre of show.genres) { %>

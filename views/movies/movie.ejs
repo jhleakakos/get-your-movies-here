@@ -14,7 +14,24 @@
     <div class="row">
         <div class=col-3>
             <img class="img-fluid" src="<%= movie.poster %>">
+
             <h3><%= movie.inventory %> in stock</h3>
+            <div class="d-flex justify-content-around">
+
+                <% if (user && movie.inventory > 0 && !(movie.renters.includes(user._id))) { %>
+                <form action="/movies/<%= movie._id %>/rent" method="POST" class="d-inline mt-1"> 
+                <button class="btn btn-primary">Rent <%= movie.name %> Now</button>
+                </form>
+                <% } %> 
+
+                <% if (user && movie.inventory <= 5 && movie.renters.includes(user._id)) { %>
+                <form action="/movies/<%= movie._id %>/return" method="POST" class="d-inline mt-1">
+                <button class="btn btn-danger">Return</button>
+                </form>
+                <% } %>
+
+            </div>
+
             <h4>Genres</h4>
             <ul>
             <% for (let genre of movie.genres) { %>
