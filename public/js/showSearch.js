@@ -31,10 +31,35 @@ const getResults = async () => {
 
     for (let item of json) {
         let genres = '';
+        let genreString = '';
         for (let genre of item.show.genres) {
             genres += `<li class="list-group-item">${genre}</li>`; 
+            genreString += `${genre}, `;
         }
+        genreString = genreString.slice(0, -2);
+
         const card = `<div class="col-3 card mb-5">
+
+                        <div class="card-header">
+                            <form action="/shows/new" method="POST" class="d-flex">
+                                <div>
+                                    <label class="form-label for="inventory">Inventory</label>
+                                    <input class="form-control" type="number" id="inventory" name="inventory" value="2" min="0" max="5" required>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add</button>
+                                <input type="hidden" id="tvmazeID" name="tvmazeID" value="${item.show.id}">
+                                <input type="hidden" id="name" name="name" value="${item.show.name}">
+                                <input type="hidden" id="genres" name="genres" value="${genreString}">
+                                <input type="hidden" id="poster" name="poster" value="${
+                                    (item.show.image === null ? '#' :
+                                    (item.show.image.medium !== null ? item.show.image.medium :
+                                    (item.show.image.original !== null ?
+                                    item.show.image.original : null)))
+                                }">
+                                <input type="hidden" id="summary" name="summary" value="${item.show.summary || 'needs a desription'}">
+                            </form>
+                        </div>
+
                         <div class="show-poster">
                             <img src="${
                                 (item.show.image === null ? '#' :
@@ -52,7 +77,6 @@ const getResults = async () => {
                             <ul class="list-group list-group-flush">
                                 ${genres}
                             </ul>
-                            <a href="/shows" method="POST" class="btn btn-primary mt-5 stretched-link">Add Show</a>
                         </div>
                     </div>`
         list.innerHTML += card;

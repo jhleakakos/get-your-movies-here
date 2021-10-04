@@ -15,6 +15,27 @@ router.get('/new', isLoggedIn, isAdmin, (req, res) => {
     res.render('shows/new');
 })
 
+router.post('/new', isLoggedIn, isAdmin, async (req, res) => {
+    console.log('im here');
+    const body = req.body;
+    const genreList = req.body.genres.split(',');
+
+    const newShow = new Show({
+        tvmazeID: body.tvmazeID,
+        name: body.name,
+        genres: genreList,
+        poster: body.poster,
+        summary: body.summary,
+        inventory: body.inventory
+    })
+
+    await newShow.save();
+    const show = await Show.findOne({ tvmazeID: body.tvmazeID });
+    req.flash('success', `Successfully added ${show.name}`);
+
+    res.redirect(`/shows/${show._id}`);
+})
+
 router.get('/new/:search', isLoggedIn, isAdmin, async (req, res) => {
     const { search } = req.params;
     const results = await fetch(`http://api.tvmaze.com/search/shows?q=${search}`);

@@ -16,8 +16,7 @@ router.get('/new', isLoggedIn, isAdmin, (req, res) => {
     res.render('movies/new');
 })
 
-router.post('/new/:id', isLoggedIn, isAdmin, async (req, res) => {
-    const { id } = req.params;
+router.post('/new', isLoggedIn, isAdmin, async (req, res) => {
     const body = req.body;
     const genreList = req.body.genres.split(',');
 
@@ -31,7 +30,7 @@ router.post('/new/:id', isLoggedIn, isAdmin, async (req, res) => {
     })
 
     await newMovie.save();
-    const movie = await Movie.findOne({ tmdbID: id });
+    const movie = await Movie.findOne({ tmdbID: body.tmdbID });
     req.flash('success', `Successfully added ${movie.name}`);
     
     res.redirect(`/movies/${movie._id}`);

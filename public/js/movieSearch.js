@@ -45,7 +45,7 @@ const getResults = async () => {
         const card = `<div class="col-3 card mb-5">
 
                         <div class="card-header">
-                            <form action="/movies/new/${item.id}" method="POST" class="d-flex">
+                            <form action="/movies/new" method="POST" class="d-flex">
                                 <div>
                                     <label class="form-label for="inventory">Inventory</label>
                                     <input class="form-control" type="number" id="inventory" name="inventory" value="2" min="0" max="5" required>
