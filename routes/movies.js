@@ -46,13 +46,18 @@ router.post('/:id/rent', isLoggedIn, async (req, res) => {
     const { id } = req.params;
     const movie = await Movie.findById(id);
     const user = await User.findById(req.user._id);
-    movie.inventory--;
-    movie.renters.push(user);
-    user.movieRentals.push(movie);
-    await movie.save();
-    await user.save();
+
+    if (movie.inventory > 0 && !(movie.renters.includes(req.user._id))) {
+        movie.inventory--;
+        movie.renters.push(user);
+        user.movieRentals.push(movie);
+
+        await movie.save();
+        await user.save();
+
+        req.flash('success', `Rented ${movie.name}`);
+    }
     
-    req.flash('success', `Rented ${movie.name}`);
     res.redirect(`/movies/${movie._id}`);
 })
 
@@ -62,7 +67,7 @@ router.post('/:id/return', isLoggedIn, async (req, res) => {
     const user = await User.findById(req.user._id);
 
     const userIdx = movie.renters.indexOf(user._id);
-    if (userIdx !== -1) {
+    if (movie.inventory < 5 && userIdx !== -1) {
         movie.inventory++;
         movie.renters.splice(userIdx, 1);
         user.movieRentals.splice(user.movieRentals.indexOf(movie), 1);

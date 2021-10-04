@@ -1,11 +1,9 @@
 # functionality
 
-- logins
-- ajax for adding tv shows and movies
-- add comments and reviews
-- inventory
-- renting movies and tv shows
-- genres
+- don't add new movie or show if it already exists locally
+- search functionality and search results page
+- admin page to upgrade users to admins and override current db values for shows/movies/users
+- user page to show what you have rented and possibly comments
 
 # styling and ui
 
