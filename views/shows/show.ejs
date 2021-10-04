@@ -18,12 +18,12 @@
             <div class="d-flex justify-content-around">
 
                 <% if (user && show.inventory > 0 && !(show.renters.includes(user._id))) { %>
-                <form action="/shows/<%= show._id %>/rent" method="POST" class="d-inline mt-1">
+                <form action="/shows/<%= show._id %>/rent?_method=PATCH" method="POST" class="d-inline mt-1">
                 <button class="btn btn-primary">Rent <%= show.name %> Now</button>
                 <% } %>
 
                 <% if (user && show.inventory < 5 && show.renters.includes(user._id)) { %>
-                <form action="/shows/<%= show._id %>/return" method="POST" class="d-inline mt-1">
+                <form action="/shows/<%= show._id %>/return?_method=PATCH" method="POST" class="d-inline mt-1">
                 <button class="btn btn-danger">Return</button>
                 </form>
                 <% } %>

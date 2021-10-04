@@ -42,7 +42,7 @@ router.get('/:id', async (req, res) => {
     res.render('movies/movie', { movie });
 })
 
-router.post('/:id/rent', isLoggedIn, async (req, res) => {
+router.patch('/:id/rent', isLoggedIn, async (req, res) => {
     const { id } = req.params;
     const movie = await Movie.findById(id);
     const user = await User.findById(req.user._id);
@@ -61,7 +61,7 @@ router.post('/:id/rent', isLoggedIn, async (req, res) => {
     res.redirect(`/movies/${movie._id}`);
 })
 
-router.post('/:id/return', isLoggedIn, async (req, res) => {
+router.patch('/:id/return', isLoggedIn, async (req, res) => {
     const { id } = req.params;
     const movie = await Movie.findById(id);
     const user = await User.findById(req.user._id);
