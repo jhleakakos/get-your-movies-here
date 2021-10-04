@@ -68,7 +68,8 @@ mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
 
 
 app.get('/', (req, res) => {
-    res.render('index');
+//    res.render('index');
+    res.redirect('/movies');
 })
 
 app.get('/about', (req, res) => {

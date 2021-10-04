@@ -35,10 +35,30 @@ const getResults = async () => {
 
     for (let item of json.results) {
         let genres = '';
+        let genreString = '';
         for (let genre of item.genreNames) {
             genres += `<li class="list-group-item">${genre.movieGenreName}</li>`; 
+            genreString += `${genre.movieGenreName}, `;
         }
+        genreString = genreString.slice(0, -2);
+
         const card = `<div class="col-3 card mb-5">
+
+                        <div class="card-header">
+                            <form action="/movies/new/${item.id}" method="POST" class="d-flex">
+                                <div>
+                                    <label class="form-label for="inventory">Inventory</label>
+                                    <input class="form-control" type="number" id="inventory" name="inventory" value="2" min="0" max="5" required>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add</button>
+                                <input type="hidden" id="tmdbID" name="tmdbID" value="${item.id}">
+                                <input type="hidden" id="name" name="name" value="${item.original_title}">
+                                <input type="hidden" id="genres" name="genres" value="${genreString}">
+                                <input type="hidden" id="poster" name="poster" value="${baseUrl.concat(size, item.poster_path)}">
+                                <input type="hidden" id="overview" name="overview" value="${item.overview}">
+                            </form>
+                        </div>
+
                         <img src="${baseUrl.concat(size, item.poster_path)}">
                         <div class="card-body">
                             <div class="card-title">

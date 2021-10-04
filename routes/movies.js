@@ -16,6 +16,27 @@ router.get('/new', isLoggedIn, isAdmin, (req, res) => {
     res.render('movies/new');
 })
 
+router.post('/new/:id', isLoggedIn, isAdmin, async (req, res) => {
+    const { id } = req.params;
+    const body = req.body;
+    const genreList = req.body.genres.split(',');
+
+    const newMovie = new Movie({
+        tmdbID: body.tmdbID,
+        name: body.name,
+        genres: genreList,
+        poster: body.poster,
+        overview: body.overview,
+        inventory: body.inventory
+    })
+
+    await newMovie.save();
+    const movie = await Movie.findOne({ tmdbID: id });
+    req.flash('success', `Successfully added ${movie.name}`);
+    
+    res.redirect(`/movies/${movie._id}`);
+})
+
 router.get('/new/:search', isLoggedIn, isAdmin, async (req, res) => {
     const { search } = req.params;
     const results = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${search}`);

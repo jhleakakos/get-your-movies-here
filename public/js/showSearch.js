@@ -52,6 +52,7 @@ const getResults = async () => {
                             <ul class="list-group list-group-flush">
                                 ${genres}
                             </ul>
+                            <a href="/shows" method="POST" class="btn btn-primary mt-5 stretched-link">Add Show</a>
                         </div>
                     </div>`
         list.innerHTML += card;
