@@ -40,6 +40,16 @@ router.get('/new/:search', isLoggedIn, isAdmin, async (req, res) => {
     const { search } = req.params;
     const results = await fetch(`http://api.tvmaze.com/search/shows?q=${search}`);
     const json = await results.json();
+
+    let show;
+    for (let i = json.length - 1; i >= 0; i--) {
+        show = await Show.findOne({ tvmazeID: json[i].show.id });
+        if (show) {
+            json.splice(i, 1);
+            continue
+        }
+    }
+
     res.json(json);
 })
 

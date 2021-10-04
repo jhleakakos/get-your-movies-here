@@ -41,10 +41,17 @@ router.get('/new/:search', isLoggedIn, isAdmin, async (req, res) => {
     const results = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${search}`);
     const json = await results.json();
 
-    for (let item of json.results) {
-        item.genreNames = [];
-        for (let id of item.genre_ids) {
-            item.genreNames.push(await MovieGenre.findOne({ movieGenreID: id }, 'movieGenreName'));
+    let movie;
+    for (let i = json.results.length - 1; i >= 0; i--) {
+        movie = await Movie.findOne({ tmdbID: json.results[i].id });
+        if (movie) {
+            json.results.splice(i, 1);
+            continue;
+        }
+
+        json.results[i].genreNames = [];
+        for (let id of json.results[i].genre_ids) {
+            json.results[i].genreNames.push(await MovieGenre.findOne({ movieGenreID: id }, 'movieGenreName'));
         }
     }
 
