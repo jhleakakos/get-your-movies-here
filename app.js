@@ -79,6 +79,8 @@ app.get('/about', (req, res) => {
 const movieController = require('./routes/movies');
 const showController = require('./routes/shows');
 const userController = require('./routes/users');
+const searchController = require('./routes/search');
 app.use('/movies', movieController);
 app.use('/shows', showController);
 app.use('/', userController);
+app.use('/search', searchController);

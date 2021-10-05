@@ -1,0 +1,50 @@
+<% layout('layout') %>
+<h1>Search Results for <%= search %></h1>
+
+<h2 class="mb-5">Movies</h2>
+<div class="container">
+    <div class="row">
+        <% for (let movie of movies) { %>
+        <div class="col-3 card mb-5">
+            <img src="<%= movie.poster %>">
+            <div class="card-body">
+                <div class="card-title">
+                    <h3><%= movie.name %></h3>
+                </div>
+                <p class="card-text"><%= movie.overview %></p>
+                <h4>Genres</h4>
+                <ul class="list-group list-group-flush">
+                <% for (let genre of movie.genres) { %>
+                    <li class="list-group-item"><%= genre %></li>
+                <% } %>
+                </ul>
+                <a href="/movies/<%= movie._id %>" class="btn btn-primary mt-5 stretched-link">See Details</a>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
+
+<h2 class="mb-5">Shows</h2>
+<div>
+    <div class="row">
+        <% for (let show of shows) { %>
+        <div class="col-3 card mb-5">
+            <img src="<%= show.poster %>">
+            <div class="card-body">
+                <div class="card-title">
+                    <h3><%= show.name %></h3>
+                </div>
+                <p class="card-text"><%= show.summary %></p>
+                <h4>Genres</h4>
+                <ul class="list-group list-group-flush">
+                <% for (let genre of show.genres) { %>
+                    <li class="list-group-item"><%= genre %></li>
+                <% } %>
+                </ul>
+                <a href="/movies/<%= show._id %>" class="btn btn-primary mt-5 stretched-link">See Details</a>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
