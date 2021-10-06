@@ -49,8 +49,8 @@ router.get('/logout', (req, res) => {
 
 router.get('/user', async (req, res) => {
     const user = await User.findById(req.user.id).populate('movieRentals').populate('showRentals');
-    console.log(user);
-    res.render('users/user', { user });
+    const allUsers = await User.find().populate('movieRentals').populate('showRentals');
+    res.render('users/user', { user, allUsers });
 })
 
 module.exports = router;
