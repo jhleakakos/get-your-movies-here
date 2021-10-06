@@ -1,6 +1,5 @@
 # functionality
 
-- search functionality and search results page
 - admin page to upgrade users to admins and override current db values for shows/movies/users
 - user page to show what you have rented and possibly comments
 

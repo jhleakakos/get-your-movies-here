@@ -47,4 +47,10 @@ router.get('/logout', (req, res) => {
     res.redirect('/');
 });
 
+router.get('/user', async (req, res) => {
+    const user = await User.findById(req.user.id).populate('movieRentals').populate('showRentals');
+    console.log(user);
+    res.render('users/user', { user });
+})
+
 module.exports = router;
