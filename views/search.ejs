@@ -1,11 +1,11 @@
 <% layout('layout') %>
 <h1>Search Results for <%= search %></h1>
 
-<h2 class="mb-5">Movies</h2>
 <div class="container">
-    <div class="row">
+    <div class="row col-6 float-start">
+        <h2 class="mb-5">Movies</h2>
         <% for (let movie of movies) { %>
-        <div class="col-3 card mb-5">
+        <div class="col-4 card mb-5">
             <img src="<%= movie.poster %>">
             <div class="card-body">
                 <div class="card-title">
@@ -25,11 +25,11 @@
     </div>
 </div>
 
-<h2 class="mb-5">Shows</h2>
 <div>
-    <div class="row">
+    <div class="row col-6 float-end">
+        <h2 class="mb-5">Shows</h2>
         <% for (let show of shows) { %>
-        <div class="col-3 card mb-5">
+        <div class="col-4 card mb-5">
             <img src="<%= show.poster %>">
             <div class="card-body">
                 <div class="card-title">
