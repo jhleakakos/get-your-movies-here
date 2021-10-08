@@ -1,58 +1,13 @@
-/*
- 
-h1, h2 {
-    text-align: center;
-}
-.tv-show-display {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.92em;
+
+    /* background-color: #0b3c5d; */
+    background-color: #0f1626;
+
+    color: #ab987a;
 }
 
-.tv-show {
-    border: 1px solid blue;
-    margin: 5px 1.66%;
-    padding: 3px;
-    width: 25%;
+img {
+    object-fit: cover;
 }
-
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 20px
-}
-
-.card-text {
-    height: 30%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} 
-
-.card + .card {
-    margin-left: 10px;
-}
-
-.card {
-    height: 500px;
-    overflow: hidden;
-}
-
-.shows-list {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.show-poster {
-    max-height: 100px;
-    max-width: 71px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.show-poster img {
-    height: 100%;
-    width: 100%;
-}
-
-*/
