@@ -74,7 +74,7 @@ const seedMovies = async () => {
             tmdbID: movie.id,
             name: movie.original_title,
             genres: genreList,
-            poster: baseUrl.concat(size, movie.poster_path),
+            poster: movie.poster_path ? baseUrl.concat(size, movie.poster_path) : '',
             overview: movie.overview,
             inventory: Math.floor(Math.random() * 6)
         })

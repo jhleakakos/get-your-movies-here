@@ -1,25 +1,14 @@
 <% layout('layout') %>
-<h1>Look At All These Great Movies</h1>
-
-<h2 class="mb-5">Look at some of the hit movies you can rent tonight</h2>
+<h1 class="mt-5 mb-5 text-center">Look at some of the hit movies you can rent tonight</h2>
 <div class="container">
     <div class="row">
         <% for (let movie of allMovies) { %>
-        <div class="col-3 card mb-5">
-            <img src="<%= movie.poster %>">
-            <div class="card-body">
-                <div class="card-title">
-                    <h3><%= movie.name %></h3>
-                </div>
-                <p class="card-text"><%= movie.overview %></p>
-                <h4>Genres</h4>
-                <ul class="list-group list-group-flush">
-                <% for (let genre of movie.genres) { %>
-                    <li class="list-group-item"><%= genre %></li>
-                <% } %>
-                </ul>
-                <a href="/movies/<%= movie._id %>" class="btn btn-primary mt-5 stretched-link">See Details</a>
-            </div>
+        <div class="position-relative col-2 mb-5">
+            <% if (movie.poster) { %>
+            <a href="/movies/<%= movie._id %>" class="stretched-link"><img src="<%= movie.poster %>" class="img-fluid rounded-pill"></a>
+            <% } else { %>
+            <p> <%= movie.name %></p>
+            <% } %>
         </div>
         <% } %>
     </div>

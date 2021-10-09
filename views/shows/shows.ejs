@@ -1,32 +1,14 @@
 <% layout('layout') %>
-<header>
-    <h1>Look At All These Great TV Shows</h1>
-
-    <h2 class="mb-5">Look at some of the hit TV shows you can rent tonight</h2>
-    
-    <h3>Please click any show to view its details</h3>
-</header>
-
-<div class="container shows-list">
+<h1 class="mb-5 mt-5 text-center">Look at some of the hit TV shows you can rent tonight</h1>
+<div class="container">
     <div class="row">
         <% for (let show of allShows) { %>
-        <div class="col-3 card mb-5">
-            <div class="show-poster">
-                <img src="<%= show.poster %>">
-            </div>
-            <div class="card-body">
-                <div class="card-title">
-                    <h3><%= show.name %></h3>
-                </div>
-                <p class="card-text"><%= show.summary %></p>
-                <h4>Genres</h4>
-                <ul class="list-group list-group-flush">
-                <% for (let genre of show.genres) { %>
-                    <li class="list-group-item"><%= genre %></li>
-                <% } %>
-                </ul>
-                <a href="/shows/<%= show._id %>" class="btn btn-primary mt-5 stretched-link">See Details</a>
-            </div>
+        <div class="position-relative col-2 mb-5">
+            <% if (show.poster) { %>
+                    <a href="/shows/<%= show._id %>" class="stretched-link"><img src="<%= show.poster %>" class="img-fluid rounded-pill"></a>
+            <% } else { %>
+            <p><%= show.name %></p>
+            <% } %>
         </div>
         <% } %>
     </div>
