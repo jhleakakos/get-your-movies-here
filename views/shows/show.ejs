@@ -33,7 +33,7 @@
             <h4>Genres</h4>
             <ul>
             <% for (let genre of show.genres) { %>
-                <li><a href=""><%= genre %></a></li>
+                <li><a href="/shows/genre/<%= genre %>"><%= genre %></a></li>
             <% } %>
             </ul>
         </div>

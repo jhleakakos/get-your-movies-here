@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Movie = require('../models/movie');
+const Show = require('../models/show');
 const Review = require('../models/review');
 const MovieGenre = require('../models/movieGenre');
 const User = require('../models/user');
@@ -149,5 +150,12 @@ router.delete('/:id', isLoggedIn, isAdmin, async (req, res) => {
     res.redirect('/movies');
 })
 
+router.get('/genre/:genre', async (req, res) => {
+    let { genre } = req.params;
+    genre = genre.toString();
+    const movies = await Movie.find({ genres: genre });
+    const shows = genre === 'Science Fiction' ? await Show.find({ genres: 'Science-Fiction' }) : await Show.find({ genres: genre });
+    res.render('search', { search: genre, movies, shows });
+})
 
 module.exports = router;
