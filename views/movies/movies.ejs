@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <% for (let movie of allMovies) { %>
-        <div class="position-relative col-3 mb-5">
+        <div class="position-relative col-2 mb-5">
             <% if (movie.poster) { %>
             <a href="/movies/<%= movie._id %>" class="stretched-link"><img src="<%= movie.poster %>" class="img-fluid rounded-pill"></a>
             <% } else { %>

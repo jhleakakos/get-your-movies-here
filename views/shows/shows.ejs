@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <% for (let show of allShows) { %>
-        <div class="position-relative col-3 card mb-5">
+        <div class="position-relative col-2 mb-5">
             <% if (show.poster) { %>
                     <a href="/shows/<%= show._id %>" class="stretched-link"><img src="<%= show.poster %>" class="img-fluid rounded-pill"></a>
             <% } else { %>
