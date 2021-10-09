@@ -7,7 +7,7 @@
             <% if (movie.poster) { %>
             <a href="/movies/<%= movie._id %>" class="stretched-link"><img src="<%= movie.poster %>" class="img-fluid rounded-pill"></a>
             <% } else { %>
-            <p> movie.name </p>
+            <p> <%= movie.name %></p>
             <% } %>
         </div>
         <% } %>

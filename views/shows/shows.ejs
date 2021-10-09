@@ -7,7 +7,7 @@
             <% if (show.poster) { %>
                     <a href="/shows/<%= show._id %>" class="stretched-link"><img src="<%= show.poster %>" class="img-fluid rounded-pill"></a>
             <% } else { %>
-            <p> show.name </p>
+            <p><%= show.name %></p>
             <% } %>
         </div>
         <% } %>
