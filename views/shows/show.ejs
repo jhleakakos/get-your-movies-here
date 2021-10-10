@@ -19,12 +19,13 @@
 
                 <% if (user && show.inventory > 0 && !(show.renters.includes(user._id))) { %>
                 <form action="/shows/<%= show._id %>/rent?_method=PATCH" method="POST" class="d-inline mt-1">
-                <button class="btn btn-primary">Rent <%= show.name %> Now</button>
+                    <button class="btn btn-primary">Rent <%= show.name %> Now</button>
+                </form>
                 <% } %>
 
                 <% if (user && show.inventory < 5 && show.renters.includes(user._id)) { %>
                 <form action="/shows/<%= show._id %>/return?_method=PATCH" method="POST" class="d-inline mt-1">
-                <button class="btn btn-danger">Return</button>
+                    <button class="btn btn-danger">Return</button>
                 </form>
                 <% } %>
 
@@ -43,11 +44,11 @@
         </div>
 
         <div class="col-6">
-            <div class=" col-8 offset-2">
+            <div class="col-8 offset-2">
                 <h3 class="text-center">Leave a review for <%= show.name %></h3>
                 <form action="/shows/<%= show._id  %>/review" method="POST" class="mb-3">
-                    <div class="mb-3 d-flex justify-content-evenly">
-                        <p>Would you recommend this movie</p>
+                    <div class="mb-2 d-flex justify-content-evenly">
+                        <p>Would you recommend this show</p>
                         <div>
                             <div class="form-check form-check-inline">
                                 <label class="form-check-label" for="recommend">Yes</label>
@@ -66,22 +67,23 @@
                     <button class="btn btn-primary">Submit Review</button>
                 </form>
             </div>
+
             <% for (let review of show.reviews) { %>
-            <div class="card mb-3">
-                <div class="card-body bg-secondary text-light">
+            <div class="card mb-3 bg-secondary text-light">
+                <div class="card-body">
                     <div class="card-title">
                         <% if (review.recommend === 'y') { %>
-                        <h3><span class="bg-success">Recommended</span> by <%= review.author.username %></h3>
+                        <h2><span class="fs-2">Recommended</span><span class="fs-5 ms-3"> by <%= review.author.username %></span></h2>
                         <% } else { %>
-                        <h3><span class="bg-danger">Not Recommended</span> by <%= review.author.username %></h3>
+                        <h2><span class="fs-2">Not recommended</span><span class="fs-5 ms-3"> by <%= review.author.username %></span></h2>
                         <% } %>
                     </div>
                     <p class="card-text ms-4"><%= review.body %></p>
                 </div>
 
                 <% if (user && review.author.equals(user._id)) { %>
-                <form action="/shows/<%= show._id %>/review/<%= review._id %>?_method=DELETE" method="POST">
-                    <button class="btn btn-sm btn-danger">Delete Review</button>
+                <form action="/shows/<%= show._id %>/review/<%= review._id %>?_method=DELETE" method="POST" class="d-flex justify-content-end">
+                    <button class="btn btn-sm btn-danger me-2 mb-2">Delete Review</button>
                 </form>
                 <% } %>
 

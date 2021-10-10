@@ -1,5 +1,5 @@
 <% layout('layout') %>
-<h1>Want to rent <%= movie.name %></h1>
+<h1 class="text-center mt-5">Want to rent <%= movie.name %></h1>
 
 <% if (user && user.role === 'admin') { %>
 <div class="d-flex">
@@ -13,20 +13,19 @@
 <div class="container mt-5">
     <div class="row">
         <div class=col-3>
-            <img class="img-fluid" src="<%= movie.poster %>">
-
+            <img class="img-fluid mb-4" src="<%= movie.poster %>">
             <h3><%= movie.inventory %> in stock</h3>
             <div class="d-flex justify-content-around">
 
                 <% if (user && movie.inventory > 0 && !(movie.renters.includes(user._id))) { %>
                 <form action="/movies/<%= movie._id %>/rent?_method=PATCH" method="POST" class="d-inline mt-1"> 
-                <button class="btn btn-primary">Rent <%= movie.name %> Now</button>
+                    <button class="btn btn-primary">Rent <%= movie.name %> Now</button>
                 </form>
                 <% } %> 
 
                 <% if (user && movie.inventory < 5 && movie.renters.includes(user._id)) { %>
                 <form action="/movies/<%= movie._id %>/return?_method=PATCH" method="POST" class="d-inline mt-1">
-                <button class="btn btn-danger">Return</button>
+                    <button class="btn btn-danger">Return</button>
                 </form>
                 <% } %>
 
@@ -40,44 +39,56 @@
             </ul>
         </div>
         <div class="col-3">
-            <h2><%= movie.name %></h2>
-            <p class="card-text"><%= movie.overview %></p>
+            <h3><%= movie.name %></h3>
+            <p class="card-text text-center"><%= movie.overview %></p>
         </div>
+
         <div class="col-6">
+            <div class="col-8 offset-2">
+                <h3 class="text-center">Leave a review for <%= movie.name %></h3>
+                <form action="/movies/<%= movie._id  %>/review" method="POST" class="mb-3">
+                    <div class="mb-2 d-flex justify-content-evenly">
+                        <p>Would you recommend this movie</p>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="recommend">Yes</label>
+                                <input id="recommendYes" name="recommend" type="radio" class="form-check-input" value="y" checked>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="recommend">No</label>
+                                <input id="recommendNo" name="recommend" type="radio" class="form-check-input" value="n">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="body">Review</label>
+                        <textarea class="form-control" name="body" id="body" cols="30" rows="5"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+
             <% for (let review of movie.reviews) { %>
-            <div class="card mb-3">
+            <div class="card mb-3 bg-secondary text-light">
                 <div class="card-body">
                     <div class="card-title">
-                        <h3>Rated <%= review.rating %> by <%= review.author.username %></h3>
+                        <% if (review.recommend === 'y') { %>
+                        <h2><span class="fs-2">Recommended</span><span class="fs-5 ms-3"> by <%= review.author.username %></span></h2>
+                        <% } else { %>
+                        <h2><span class="fs-2">Not recommended</span><span class="fs-5 ms-3"> by <%= review.author.username %></span></h2>
+                        <% } %>
                     </div>
-                    <p class="card-text"><%= review.body %></p>
+                    <p class="card-text ms-4"><%= review.body %></p>
                 </div>
 
                 <% if (user && review.author.equals(user._id)) { %>
-                <form action="/movies/<%= movie._id %>/review/<%= review._id %>?_method=DELETE" method="POST">
-                    <button class="btn btn-sm btn-danger">Delete Review</button>
+                <form action="/movies/<%= movie._id %>/review/<%= review._id %>?_method=DELETE" method="POST" class="d-flex justify-content-end">
+                    <button class="btn btn-sm btn-danger me-2 mb-2">Delete Review</button>
                 </form>
                 <% } %>
 
-
             </div>
             <% } %>
-        </div>
-        <div class="col-6">
-            <h3>Leave a review for <%= movie.name %></h3>
-            <form action="/movies/<%= movie._id  %>/review" method="POST" class="mb-3">
-                <div class="mb-3">
-                    <div class="col-4">
-                        <label class="form-label" for="rating">Rating</label>
-                        <input class="form-range" id="rating" name="rating" type="range" min="1" max="5">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="body">Review</label>
-                    <textarea class="form-control" name="body" id="body" cols="30" rows="10"></textarea>
-                </div>
-                <button class="btn btn-success">Submit Review</button>
-            </form>
         </div>
     </div>
 </div>
