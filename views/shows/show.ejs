@@ -40,7 +40,7 @@
         </div>
         <div class="col-3">
             <h3 class="text-center mb-3"><%= show.name %></h3>
-            <p class="card-text text-center"><%= show.summary %></p>
+            <p class="card-text text-center"><%= show.summary.replace(/<\/?.>/g, ' ') %></p>
         </div>
 
         <div class="col-6">

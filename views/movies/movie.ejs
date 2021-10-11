@@ -40,7 +40,7 @@
         </div>
         <div class="col-3">
             <h3><%= movie.name %></h3>
-            <p class="card-text text-center"><%= movie.overview %></p>
+            <p class="card-text text-center"><%= movie.overview.replace(/<\/?.>/g, ' ') %></p>
         </div>
 
         <div class="col-6">

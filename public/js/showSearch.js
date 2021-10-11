@@ -56,7 +56,7 @@ const getResults = async () => {
                                     (item.show.image.original !== null ?
                                     item.show.image.original : null)))
                                 }">
-                                <input type="hidden" id="summary" name="summary" value="${item.show.summary || 'needs a desription'}">
+                                <input type="hidden" id="summary" name="summary" value="${item.show.summary.replace(/<\/?.>/g, ' ') || 'needs a desription'}">
                             </form>
                         </div>
 
@@ -71,7 +71,7 @@ const getResults = async () => {
                                 <div class="card-title">
                                     <h3>${item.show.name}</h3>
                                 </div>
-                                <p class="card-text">${item.show.summary}</p>
+                                <p class="card-text">${item.show.summary.replace(/<\/?.>/g, ' ')}</p>
                             </div>
                             <div class="mt-5">
                                 <h4 class="border-top pt-2">Genres</h4>

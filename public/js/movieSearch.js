@@ -55,7 +55,7 @@ const getResults = async () => {
                                 <input type="hidden" id="name" name="name" value="${item.original_title}">
                                 <input type="hidden" id="genres" name="genres" value="${genreString}">
                                 <input type="hidden" id="poster" name="poster" value="${baseUrl.concat(size, item.poster_path)}">
-                                <input type="hidden" id="overview" name="overview" value="${item.overview}">
+                                <input type="hidden" id="overview" name="overview" value="${item.overview.replace(/<\/?.>, ' ')}">
                             </form>
                         </div>
 
@@ -65,7 +65,7 @@ const getResults = async () => {
                                 <div class="card-title">
                                     <h3>${item.original_title}</h3>
                                 </div>
-                                <p class="card-text">${item.overview}</p>
+                                <p class="card-text">${item.overview.replace(/<\/?.>, ' ')}</p>
                             </div>
                             <div class="mt-5">
                                 <h4 class="border-top pt-2">Genres</h4>
