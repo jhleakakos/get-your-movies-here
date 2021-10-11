@@ -1,14 +1,6 @@
 # functionality
 
-- admin page to upgrade users to admins and override current db values for shows/movies/users
-
-# styling and ui
-
-- custom css on top of bootstrap
-- hover effects
-- spacing around and in cards
-- visually align items in cards
-- custom font
+- check seeds file to make sure to pass null for movie poster instead of partial url string
 
 # update readme
 
@@ -19,3 +11,6 @@
 - visually appealing
 - code blocks
 - port info
+- set admin account in db initially
+- possibly put some screenshots in case someone doesn't run app
+- manual dependencies

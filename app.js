@@ -15,9 +15,6 @@ const localStrategy = require('passport-local');
 const User = require('./models/user');
 
 const mongoose = require('mongoose');
-//const Show = require('./models/show');
-//const Movie = require('./models/movie');
-//const User = require('./models/user');
 
 app.listen(3000, () => console.log('express listening on port 3000'));
 app.engine('ejs', ejsMate);
