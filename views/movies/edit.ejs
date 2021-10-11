@@ -1,35 +1,27 @@
 <% layout('layout') %>
-<h1>Update <%= movie.name %></h1>
 
 <div class="container mt-5">
+    <h1 class="mb-3 mt-3 text-center">Update <%= movie.name %></h1>
     <div class="col-8 offset-2">
         <form action="/movies/<%= movie._id %>?_method=PATCH" method="POST">
-            <div class="mb-3">
-                <label class="form-label" for="name">Movie Name</label>
-                <input class="form-control" type="text" id="name" name="name" value="<%= movie.name %>" required>
-            </div>
+            <label class="form-label" for="name">Movie Name</label>
+            <input class="form-control" type="text" id="name" name="name" value="<%= movie.name %>" required>
 
-            <div class="mb-3">
-                <label class="form-label" for="poster">Poster URL</label>
-                <input class="form-control" type="text" id="poster" name="poster" value="<%= movie.poster %>" required>
-            </div>
+            <label class="form-label mt-3" for="poster">Poster URL</label>
+            <input class="form-control" type="text" id="poster" name="poster" value="<%= movie.poster %>" required>
 
-            <div class="mb-3">
-                <label class="form-label" for="overview">Overview</label>
-                <textarea class="form-control" id="overview" name="overview" rows="5" required><%= movie.overview %></textarea>
-            </div>
+            <label class="form-label mt-3" for="overview">Overview</label>
+            <textarea class="form-control" id="overview" name="overview" rows="5" required><%= movie.overview %></textarea>
 
-            <div class="mb-3">
-                <label class="form-label" for="genres">Genres</label>
-                <input class="form-control" type="text" id="genres" name="genres" value="<%= movie.genres %>" required>
-            </div>
+            <label class="form-label mt-3" for="genres">Genres</label>
+            <input class="form-control" type="text" id="genres" name="genres" value="<%= movie.genres %>" required>
 
-            <div class="mb-3">
+            <div class="mt-3">
                 <button class="btn btn-primary">Update</button>
                 <a class="btn btn-secondary" href="/movies/<%= movie._id %>">Cancel</a>
             </div>
         </form>
-        <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
+        <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST" class="mt-3">
             <button class="btn btn-danger">Delete</button>
         </form>
     </div>

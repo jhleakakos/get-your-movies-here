@@ -21,7 +21,7 @@ router.post('/register', async (req, res, next) => {
         if (req.session.returnURL && req.session.returnURL.indexOf('/review') > 0) {
             req.session.returnURL = req.session.returnURL.slice(0, -7);
         }
-        res.redirect(req.session.returnURL || '/');
+        res.redirect(req.session.returnURL || '/movies');
     }
     catch(e) {
         req.flash('error', e.message);

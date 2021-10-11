@@ -1,10 +1,10 @@
 <% layout('layout') %>
 
-<div class="container">
-    <h1 class="mb-3 mt-3 text-center">Admin Panel<h1>
-    <div class="row">
+<div class="container mt-5">
+    <h1 class="mb-3 mt-3 text-center">Admin Panel</h1>
+    <div class="row col-10 offset-1">
         <% for (let user of allUsers) { %>
-        <div class="col-4">
+        <div class="col-4 mt-3 mb-3">
             <form action="/admin" method="POST">
                 <label class="form-label" for="username">Username</label>
                 <input class="form-control" type="text" name="username" id="username" value="<%= user.username %>">
