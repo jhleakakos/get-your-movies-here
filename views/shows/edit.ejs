@@ -2,33 +2,35 @@
 <h1>Update <%= show.name %></h1>
 
 <div class="container mt-5">
-    <form action="/shows/<%= show._id %>?_method=PATCH" method="POST">
-        <div class="mb-3">
-            <label class="form-label" for="name">TV Show Name</label>
-            <input class="form-control" type="text" id="name" name="name" value="<%= show.name %>" required>
-        </div>
+    <div class="col-8 offset-2">
+        <form action="/shows/<%= show._id %>?_method=PATCH" method="POST">
+            <div class="mb-3">
+                <label class="form-label" for="name">TV Show Name</label>
+                <input class="form-control" type="text" id="name" name="name" value="<%= show.name %>" required>
+            </div>
 
-        <div class="mb-3">
-            <label class="form-label" for="poster">Poster URL</label>
-            <input class="form-control" type="text" id="poster" name="poster" value="<%= show.poster %>" required>
-        </div>
+            <div class="mb-3">
+                <label class="form-label" for="poster">Poster URL</label>
+                <input class="form-control" type="text" id="poster" name="poster" value="<%= show.poster %>" required>
+            </div>
 
-        <div class="mb-3">
-            <label class="form-label" for="summary">Summary</label>
-            <textarea class="form-control" id="summary" name="summary"required><%= show.summary %></textarea>
-        </div>
+            <div class="mb-3">
+                <label class="form-label" for="summary">Summary</label>
+                <textarea class="form-control" id="summary" name="summary" rows="5" required><%= show.summary %></textarea>
+            </div>
 
-        <div class="mb-3">
-            <label class="form-label" for="genres">Genres</label>
-            <input class="form-control" type="text" id="genres" name="genres" value="<%= show.genres %>" required>
-        </div>
+            <div class="mb-3">
+                <label class="form-label" for="genres">Genres</label>
+                <input class="form-control" type="text" id="genres" name="genres" value="<%= show.genres %>" required>
+            </div>
 
-        <div class="mb-3">
-            <button class="btn btn-primary">Update</button>
-            <a class="btn btn-secondary" href="/shows/<%= show._id %>">Cancel</a>
-        </div>
-    </form>
-    <form action="/shows/<%= show._id %>?_method=DELETE" method="POST">
-        <button class="btn btn-danger">Delete</button>
-    </form>
+            <div class="mb-3">
+                <button class="btn btn-primary">Update</button>
+                <a class="btn btn-secondary" href="/shows/<%= show._id %>">Cancel</a>
+            </div>
+        </form>
+        <form action="/shows/<%= show._id %>?_method=DELETE" method="POST">
+            <button class="btn btn-danger">Delete</button>
+        </form>
+    </div>
 </div>
