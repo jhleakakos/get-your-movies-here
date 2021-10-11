@@ -38,15 +38,15 @@ const getResults = async () => {
         }
         genreString = genreString.slice(0, -2);
 
-        const card = `<div class="col-3 card mb-5">
+        const card = `<div class="col-3 card mb-5 bg-secondary text-light">
 
-                        <div class="card-header">
+                        <div class="card-header mb-3">
                             <form action="/shows/new" method="POST" class="d-flex">
                                 <div>
                                     <label class="form-label for="inventory">Inventory</label>
                                     <input class="form-control" type="number" id="inventory" name="inventory" value="2" min="0" max="5" required>
                                 </div>
-                                <button class="btn btn-primary mt-3">Add</button>
+                                <button class="btn btn-primary mt-3 ms-2">Add</button>
                                 <input type="hidden" id="tvmazeID" name="tvmazeID" value="${item.show.id}">
                                 <input type="hidden" id="name" name="name" value="${item.show.name}">
                                 <input type="hidden" id="genres" name="genres" value="${genreString}">
@@ -60,23 +60,25 @@ const getResults = async () => {
                             </form>
                         </div>
 
-                        <div class="show-poster">
-                            <img src="${
-                                (item.show.image === null ? '#' :
-                                (item.show.image.medium !== null ? item.show.image.medium :
-                                (item.show.image.original !== null ?
-                                item.show.image.original : null)))
-                            }">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">
-                                <h3>${item.show.name}</h3>
+                        <img src="${
+                            (item.show.image === null ? '#' :
+                            (item.show.image.medium !== null ? item.show.image.medium :
+                            (item.show.image.original !== null ?
+                            item.show.image.original : null)))
+                        }">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-title">
+                                    <h3>${item.show.name}</h3>
+                                </div>
+                                <p class="card-text">${item.show.summary}</p>
                             </div>
-                            <p class="card-text">${item.show.summary}</p>
-                            <h4>Genres</h4>
-                            <ul class="list-group list-group-flush">
-                                ${genres}
-                            </ul>
+                            <div class="mt-5">
+                                <h4 class="border-top pt-2">Genres</h4>
+                                <ul class="list-group list-group-flush">
+                                    ${genres}
+                                </ul>
+                            </div>
                         </div>
                     </div>`
         list.innerHTML += card;
