@@ -4,11 +4,11 @@
 <a href="/admin" class="btn btn-primary mt-5">Admin Panel</a>
 <% } %>
 
-<h1 class="mt-5">Rentals for <%= user.username %></h1>
+<h1 class="mt-5 text-center">Rentals for <%= user.username %></h1>
 
 <div class="container">
     <div class="row col-6 float-start">
-        <h2 class="mb-5 mt-5 text-center border-bottom">Movies</h2>
+        <h2 class="mb-5 mt-5 text-center">Movies</h2>
         <% for (let movie of user.movieRentals) { %>
         <div class="position-relative col-4 mb-5">
             <% if (movie.poster) { %>
@@ -23,7 +23,7 @@
 
 <div class="container">
     <div class="row col-6 float-end">
-        <h2 class="mb-5 mt-5 text-center border-bottom">Shows</h2>
+        <h2 class="mb-5 mt-5 text-center">Shows</h2>
         <% for (let show of user.showRentals) { %>
         <div class="position-relative col-4 mb-5">
             <% if (show.poster) { %>

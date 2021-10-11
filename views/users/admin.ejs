@@ -1,26 +1,23 @@
 <% layout('layout') %>
 
 <div class="container">
-    <h2>Admin Panel<h2>
+    <h1 class="mb-3 mt-3 text-center">Admin Panel<h1>
     <div class="row">
         <% for (let user of allUsers) { %>
-        <div class="card col-4">
-            <div class="card-body">
-                <form action="/admin" method="POST">
-                    <label class="form-label" for="username">Username</label>
-                    <input class="form-control" type="text" name="username" id="username" value="<%= user.username %>">
+        <div class="col-4">
+            <form action="/admin" method="POST">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" name="username" id="username" value="<%= user.username %>">
 
-                    <label class="form-label" for="role">Role</label>
-                    <input class="form-control" type="text" name="role" id="role" value="<%= user.role %>">
+                <label class="form-label mt-2" for="role">Role</label>
+                <input class="form-control" type="text" name="role" id="role" value="<%= user.role %>">
 
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-control" type="text" name="email" id="email" value="<%= user.email %>">
+                <label class="form-label mt-2" for="email">Email</label>
+                <input class="form-control" type="text" name="email" id="email" value="<%= user.email %>">
 
-                    <input type="hidden" id="userid" name="userid" value="<%= user._id %>">
-                    <button class="btn btn-primary">Update</button>
-
-                </form>
-            </div>
+                <input type="hidden" id="userid" name="userid" value="<%= user._id %>">
+                <button class="btn btn-primary mt-3">Update</button>
+            </form>
         </div>
         <% } %>
     </div>
