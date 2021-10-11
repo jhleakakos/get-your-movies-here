@@ -39,13 +39,13 @@ router.post('/login', passport.authenticate('local', {failureFlash: true, failur
     if (req.session.returnURL && req.session.returnURL.indexOf('/review') > 0) {
         req.session.returnURL = req.session.returnURL.slice(0, -7);
     }
-    res.redirect(req.session.returnURL || '/');
+    res.redirect(req.session.returnURL || '/movies');
 });
 
 router.get('/logout', (req, res) => {
     req.logout();
     req.flash('success', 'Logged out. See you next time');
-    res.redirect('/');
+    res.redirect('/movies');
 });
 
 router.get('/user', async (req, res) => {
