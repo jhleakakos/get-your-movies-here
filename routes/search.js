@@ -10,4 +10,12 @@ router.post('/', async (req, res) => {
     res.render('search', { search, movies, shows });
 })
 
+router.get('/genre/:genre', async (req, res) => {
+    let { genre } = req.params;
+    genre = genre.toString();
+    const movies = genre === 'Science-Fiction' ? await Movie.find({ genres: 'Science Fiction' }) : await Movie.find({ genres: genre });
+    const shows = genre === 'Science Fiction' ? await Show.find({ genres: 'Science-Fiction' }) : await Show.find({ genres: genre });
+    res.render('search', { search: genre, movies, shows });
+})
+
 module.exports = router;

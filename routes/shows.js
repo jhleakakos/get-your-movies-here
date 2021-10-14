@@ -145,12 +145,4 @@ router.delete('/:id', isLoggedIn, isAdmin, async (req, res) => {
     res.redirect('/shows');
 })
 
-router.get('/genre/:genre', async (req, res) => {
-    let { genre } = req.params;
-    genre = genre.toString();
-    const movies = genre === 'Science-Fiction' ? await Movie.find({ genres: 'Science Fiction' }) : await Movie.find({ genres: genre });
-    const shows = await Show.find({ genres: genre });
-    res.render('search', { search: genre, movies, shows });
-})
-
 module.exports = router;
