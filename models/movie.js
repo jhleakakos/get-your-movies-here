@@ -17,7 +17,6 @@ const movieSchema = new Schema({
     }],
     poster: {
         type: String,
-        required: true
     },
     overview: {
         type: String,

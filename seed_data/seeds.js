@@ -74,7 +74,7 @@ const seedMovies = async () => {
             tmdbID: movie.id,
             name: movie.original_title,
             genres: genreList,
-            poster: movie.poster_path ? baseUrl.concat(size, movie.poster_path) : '',
+            poster: movie.poster_path ? baseUrl.concat(size, movie.poster_path) : null,
             overview: movie.overview,
             inventory: Math.floor(Math.random() * 6)
         })
@@ -83,6 +83,6 @@ const seedMovies = async () => {
     }
 }
 
-// seedShows().then(() => mongoose.connection.close());
-// seedMovieGenres().then(() => mongoose.connection.close());
-// seedMovies().then(() => mongoose.connection.close());
+//seedShows().then(() => mongoose.connection.close());
+//seedMovieGenres().then(() => mongoose.connection.close());
+//seedMovies().then(() => mongoose.connection.close());

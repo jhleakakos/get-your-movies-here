@@ -9,7 +9,7 @@
             <% if (movie.poster) { %>
             <a href="/movies/<%= movie._id %>" class="stretched-link"><img src="<%= movie.poster %>" class="img-fluid rounded-pill"></a>
             <% } else { %>
-            <p><%= movie.name %></p>
+            <a href="/movies/<%= movie._id %>" class="stretched-link fs-4"><%= movie.name %></a>
             <% } %>
         </div>
         <% } %>
@@ -24,7 +24,7 @@
             <% if (show.poster) { %>
             <a href="/shows/<%= show._id %>" class="stretched-link"><img src="<%= show.poster %>" class="img-fluid rounded-pill"></a>
             <% } else { %>
-            <p><%= show.name %></p>
+            <a href="/shows/<%= show._id %>" class="stretched-link fs-4"><%= show.name %></a>
             <% } %>
         </div>
         <% } %>
