@@ -9,8 +9,16 @@
                 <label class="form-label" for="username">Username</label>
                 <input class="form-control" type="text" name="username" id="username" value="<%= user.username %>">
 
-                <label class="form-label mt-2" for="role">Role</label>
-                <input class="form-control" type="text" name="role" id="role" value="<%= user.role %>">
+                <label class="form-label mt-2" for="role">Role (currently <%= user.role %>)</label>
+                <select class="form-select" id="role" name="role" aria-label="Default select example">
+                    <% if (user.role === 'admin') { %>
+                    <option value="admin">admin</option>
+                    <option value="customer">customer</option>
+                    <% } else { %>
+                    <option value="customer">customer</option>
+                    <option value="admin">admin</option>
+                    <% } %>
+                </select>
 
                 <label class="form-label mt-2" for="email">Email</label>
                 <input class="form-control" type="text" name="email" id="email" value="<%= user.email %>">
