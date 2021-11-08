@@ -1,9 +1,6 @@
 # Dataset Info
 
-These three datasets are for testing before we set the app up to use APIs or pull info from local database.
-
-And yes. We know we have TV datasets for a project about renting movies.
-
+These datasets are for initially populating the local database. You can pull your own data from the APIs and modify these scripts to load your own starter data.
 
 Repeated from main README:
 

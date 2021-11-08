@@ -1,19 +1,18 @@
 const mongoose = require('mongoose');
-const Show = require('../models/show');
-const Movie = require('../models/movie');
-const MovieGenre = require('../models/movieGenre');
-const showData = require('./seed_shows');
-const movieData = require('./seed_movies.json');
-const movieGenreData = require('./movie_genres.json');
-const movieGenre = require('../models/movieGenre');
+const Show = require('../../models/show');
+const Movie = require('../../models/movie');
+const MovieGenre = require('../../models/movieGenre');
+const showData = require('../data/shows');
+const movieData = require('../data/movies');
+const movieGenreData = require('../data/movie_genres');
 
-// mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useCreateIndex: true
-// })
-//     .then(() => console.log('seeds connection open'))
-//     .catch(e => console.log(e));
+ mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true
+ })
+.then(() => console.log('seeds connection open'))
+.catch(e => console.log(e));
 
 const seedShows = async () => {
     await Show.deleteMany();
@@ -34,7 +33,6 @@ const seedShows = async () => {
             inventory: Math.floor(Math.random() * 6)
         });
         await newShow.save();
-        // console.log(newShow);
     }
 }
 
@@ -46,7 +44,6 @@ const seedMovieGenres = async () => {
             movieGenreName: genre.name
         })
         await newMovieGenre.save();
-        // console.log(newMovieGenre);
     }
 }
 
@@ -79,7 +76,6 @@ const seedMovies = async () => {
             inventory: Math.floor(Math.random() * 6)
         })
         await newMovie.save();
-        // console.log(newMovie);
     }
 }
 
