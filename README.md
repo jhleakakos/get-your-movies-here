@@ -40,15 +40,18 @@ The app has no users in the database by default. To create an admin account:
 In the MongoDB shell:
 
 - run `use getyourmovieshere` to switch to the app database
-- run `db.users.findOne({"username": *username*})` to confirm you have the right user
+- \*run `db.users.findOne({"username": *username*})` to confirm you have the right 
+user
 
 Users are set with the role of customer by default. To promote a user from a 
 customer to an administrator (role of "admin"):
 
-- run `db.users.updateOne({"username": *username*}, {$set: {"role": "admin"}})`
+- \*run `db.users.updateOne({"username": *username*}, {$set: {"role": "admin"}})`
 
 Once you have an administrator account, you can use the app interface to 
 change other users to administrators or customers.
+
+\* substitute desired username in place of *username*
 
 ## .env file
 
