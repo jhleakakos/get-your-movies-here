@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Movie = require('../models/movie');
-const Show = require('../models/show');
 const Review = require('../models/review');
 const MovieGenre = require('../models/movieGenre');
 const User = require('../models/user');

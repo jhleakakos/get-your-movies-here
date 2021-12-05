@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const Movie = require('../models/movie');
 const Show = require('../models/show');
 const Review = require('../models/review');
 const User = require('../models/user');
@@ -17,7 +16,6 @@ router.get('/new', isLoggedIn, isAdmin, (req, res) => {
 })
 
 router.post('/new', isLoggedIn, isAdmin, async (req, res) => {
-    console.log('im here');
     const body = req.body;
     const genreList = req.body.genres.split(',');
 
