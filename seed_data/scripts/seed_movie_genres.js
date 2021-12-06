@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
 const MovieGenre = require('../../models/movieGenre');
 const movieGenreData = require('../data/movie_genres');
+require('dotenv').config();
 
- mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
+mongoose.connect(`mongodb://${process.env.DB_CONNECTION}:27017/getyourmovieshere`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
- })
-.then(() => console.log('seeds connection open'))
-.catch(e => console.log(e));
+})
+    .then(() => console.log('seeds connection open'))
+    .catch(e => console.log(e));
 
 const seedMovieGenres = async () => {
     await MovieGenre.deleteMany();

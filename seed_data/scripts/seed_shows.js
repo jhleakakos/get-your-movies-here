@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
 const Show = require('../../models/show');
-const showData = require('../data/shows');
+const showData = require('../data/shows.json');
+require('dotenv').config();
 
- mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
+mongoose.connect(`mongodb://${process.env.DB_CONNECTION}:27017/getyourmovieshere`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
- })
-.then(() => console.log('seeds connection open'))
-.catch(e => console.log(e));
+})
+    .then(() => console.log('seeds connection open'))
+    .catch(e => console.log(e));
 
 const seedShows = async () => {
     await Show.deleteMany();
