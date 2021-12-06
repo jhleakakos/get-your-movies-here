@@ -33,7 +33,7 @@ Nodemon is installed as a local development dependency.
 
 ## .env file
 
-The dotenv package uses a file named '.env' in the root of the project. This file is not under version control, so you will need to create it and add the following two environment variables:
+The dotenv package uses a file named '.env' in the root of the project. This file is not under version control, so you will need to create it and add the following three environment variables:
 
 - API_KEY: this is the key to access the TMDb movie API. You can get this key by signing up for an account and requesting an API key at 
 [The Movie Database](https://www.themoviedb.org/)
@@ -47,6 +47,14 @@ echo 'API_KEY=put_your_tmdb_api_key_here' >> .env
 ```
 echo 'SESSION_SECRET=put_your_session_secret_string_here' >> .env
 ```
+
+- DB_CONNECTION sets part of the MongoDB connection string in app.js. Set this value to 'localhost' if you are running the app locally, and set it to 'mongo' if you are running the app in a Docker container
+
+```
+echo 'DB_CONNECTION=localhost' >> .env
+```
+
+If you run the app as a docker container, you need to move this .env file into the same directory as the Dockerfile.
 
 ## Running the App
 
