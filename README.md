@@ -22,7 +22,24 @@ You will need to install:
 
 - [Node](https://nodejs.org)
 - [NPM](https://www.npmjs.com) (if you didn't install with Node)
-- [MongoDB](https://www.mongodb.com).
+- [MongoDB](https://www.mongodb.com) or use a Docker container
+
+```
+docker container run --name <container_name> -d -p 27017:27017 -v <directory_to_mongo_data>:/data/db mongo
+```
+
+You can find the directory that stores MongoDB data by looking at the mongo.conf file.
+
+If you use a docker container for MongoDB and want to run the mongo shell through docker
+
+```
+docker container exec -it <container_name_from_previous_docker_command> bash
+```
+
+Once you connect to the Docker container running MongoDB, you can use `mongo` to launch the MongoDB shell.
+
+If you install MongoDB locally, you can run the `mongo` command from a local terminal to launch the MongoDB shell.
+
 
 Install project dependencies with NPM by running the following command in the root directory
 ```
@@ -114,16 +131,16 @@ use getyourmovieshere
 
 - confirm you have the right user
 ```
-db.users.findOne({"username": user})
+db.users.findOne({"username": <user>})
 ``` 
 
 Users are set with the role of customer by default. To promote a user from a customer to an administrator (role of "admin"):
 
 ```
-db.users.updateOne({"username": user}, {$set: {"role": "admin"}})
+db.users.updateOne({"username": <user>}, {$set: {"role": "admin"}})
 ```
 
-\* substitute desired username in place of *user*
+\* substitute desired username in place of <user>
 
 Once you have an administrator account, you can use the app interface to change other users to administrators or customers.
 
