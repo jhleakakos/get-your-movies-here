@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 const Show = require('../../models/show');
 const showData = require('../data/shows.json');
-require('dotenv').config();
 
-mongoose.connect(`mongodb://${process.env.DB_CONNECTION}:27017/getyourmovieshere`, {
+mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true

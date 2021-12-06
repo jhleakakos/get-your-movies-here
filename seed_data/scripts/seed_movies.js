@@ -3,9 +3,8 @@ const Movie = require('../../models/movie');
 const MovieGenre = require('../../models/movieGenre');
 const movieData = require('../data/movies.json');
 const movieGenreData = require('../data/movie_genres');
-require('dotenv').config();
 
-mongoose.connect(`mongodb://${process.env.DB_CONNECTION}:27017/getyourmovieshere`, {
+mongoose.connect('mongodb://localhost:27017/getyourmovieshere', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
