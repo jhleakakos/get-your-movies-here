@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - db_data:/data/db
+
+  movieapp:
+    build: .
+    container_name: movieapp
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+        
+volumes:
+  db_data:
+    name: gymh_db_data

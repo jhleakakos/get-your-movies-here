@@ -22,35 +22,24 @@ You will need to install:
 
 - [Node](https://nodejs.org)
 - [NPM](https://www.npmjs.com) (if you didn't install with Node)
-- [MongoDB](https://www.mongodb.com) or use a Docker container
 
-```
-docker container run --name <container_name> -d -p 27017:27017 -v <directory_to_mongo_data>:/data/db mongo
-```
+If you are installing the app locally
 
-You can find the directory that stores MongoDB data by looking at the mongo.conf file.
-
-If you use a docker container for MongoDB and want to run the mongo shell through docker
-
-```
-docker container exec -it <container_name_from_previous_docker_command> bash
-```
-
-Once you connect to the Docker container running MongoDB, you can use `mongo` to launch the MongoDB shell.
-
-If you install MongoDB locally, you can run the `mongo` command from a local terminal to launch the MongoDB shell.
-
-
-Install project dependencies with NPM by running the following command in the root directory
+- [MongoDB](https://www.mongodb.com)
+- Install project dependencies with NPM by running the following command in the root directory
 ```
 npm install
 ```
 
 Nodemon is installed as a local development dependency.
 
+If you are running the app with Docker
+
+- [Docker](https://www.docker.com/)
+
 ## .env file
 
-The dotenv package uses a file named '.env' in the root of the project. This file is not under version control, so you will need to create it and add the following three environment variables:
+The dotenv package uses a file named .env in the root of the project. This file is not under version control, so you will need to create it and add the following three environment variables:
 
 - API_KEY: this is the key to access the TMDb movie API. You can get this key by signing up for an account and requesting an API key at 
 [The Movie Database](https://www.themoviedb.org/)
@@ -65,15 +54,13 @@ echo 'API_KEY=put_your_tmdb_api_key_here' >> .env
 echo 'SESSION_SECRET=put_your_session_secret_string_here' >> .env
 ```
 
-- DB_CONNECTION sets part of the MongoDB connection string in app.js. Set this value to 'localhost' if you are running the app locally, and set it to 'mongo' if you are running the app in a Docker container
+- DB_CONNECTION sets part of the MongoDB connection string in app.js. Set this value to 'localhost' if you are running the app locally, and set it to 'mongo' if you are running the app in Docker
 
 ```
 echo 'DB_CONNECTION=localhost' >> .env
 ```
 
-If you run the app as a docker container, you need to move this .env file into the same directory as the Dockerfile.
-
-## Running the App
+## Running the App Locally
 
 Before starting the app, make sure the MongoDB service is running.
 
@@ -84,6 +71,24 @@ npm run nodemon
 in the app directory to start the app.
 
 Open a web browser and go to localhost:3000 to access the app.
+
+## Running the App with Docker
+
+In the root of the repository, run
+
+```
+docker-compose up -d
+```
+
+Open a web browser and go to localhost:3000 to access the app.
+
+When you are done, run
+
+```
+docker-compose down
+```
+
+to stop and clean up the containers.
 
 ## Database Setup
 
@@ -97,9 +102,22 @@ This project uses five collections:
 
 You can view more info about each of these in the models directory.
 
-The seed_data folder contains starter data and scripts to initially populate the database with movies, shows, and movie genres. The seed_all.js script contains all of the other scripts. You can comment/uncomment from that file or run each of the other scripts on their own.
+If this is your first time running the app, you should seed the database. The /seed_data/data directory has starter JSON files that you can use to seed the database.
 
-You will need to run the script to populate the TMDb movie genres in order for other functionality to work.
+You need to populate movie genres in order for movie functionality to work in the app.
+
+You will need the Mongoose package installed if you want to run the seed scripts
+
+```
+npm install mongoose
+```
+
+In /seed_data/scripts, you have
+
+- seed_all.js: you can comment/uncomment and see all of the logic in one file
+- seed_movie_genres.js: seed only movie genres
+- seed_movies.js: seed only movies
+- seed_shows.js: seed only shows
 
 You will populate users and reviews from the app interface.
 
@@ -109,7 +127,21 @@ Make sure the MongoDB service is running and then call the script with Node
 node script_you_want_to_run.js
 ```
 
-See the following [Admin Users](#admin-users) section for adding movies and shows through the app interface.
+See the [Admin Users](#admin-users) section for adding movies and shows through the app interface.
+
+## Accessing Mongo Shell
+
+If you installed the Mongo shell locally, you can access the running MongoDB instance at the terminal with
+
+```
+mongo
+```
+
+If you did not install the Mongo shell locally, you can connect to the MongoDB instance at the terminal through the MongoDB container with 
+
+```
+docker container exec -it mongo mongo
+```
 
 ## Admin Users
 
@@ -117,10 +149,7 @@ The app has no users in the database by default. To create an admin account:
 
 - run the app
 - create a standard user with the Register feature
-- go back to terminal and start the MongoDB shell by running
-```
-mongo
-```
+- run the Mongo shell per the instructions in the last section
 
 In the MongoDB shell:
 
