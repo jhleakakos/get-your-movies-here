@@ -57,7 +57,7 @@ echo 'SESSION_SECRET=put_your_session_secret_string_here' >> .env
 - DB_CONNECTION sets part of the MongoDB connection string in app.js. Set this value to 'localhost' if you are running the app locally, and set it to 'mongo' if you are running the app in Docker
 
 ```
-echo 'DB_CONNECTION=localhost' >> .env
+echo 'DB_CONNECTION=mongo' >> .env
 ```
 
 ## Running the App Locally

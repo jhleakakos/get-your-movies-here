@@ -11,6 +11,7 @@ services:
 
   movieapp:
     build: .
+    image: movieapp
     container_name: movieapp
     ports:
       - '3000:3000'
